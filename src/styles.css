@@ -811,7 +811,7 @@ p-calendar {
 /* :host ::ng-deep .p-datatable-responsive-demo .p-datatable-tbody > tr > td .p-column-title {
         display: none;
 } */
-.MedsContainer, .AllergiesContainer {
+.MedsContainer, .ImuneContainer, .AllergiesContainer {
     position: relative;
     height: calc(100% - 110px);
     margin: 0;
@@ -1263,4 +1263,10 @@ font: normal normal normal 9px/11px RobotoR;
 }
 .AllergiesContainer .RightMenu .Vitals {
     margin: auto 0 0;
+}
+.ImuneContainer .Title::before {
+    content: "\e906" !important;
+}
+.ImuneContainer .ui-inputgroup input {
+    min-width: 146px;
 }

@@ -1,19 +1,19 @@
 import { Component, OnInit } from '@angular/core';
-import {MenuItem} from 'primeng/api';
+import { MenuItem } from 'primeng/api';
 import { Router } from '@angular/router';
 
 
 
 @Component({
-  selector: 'app-menu',
-  templateUrl: './menu.component.html',
-  styleUrls: ['./menu.component.css']
+    selector: 'app-menu',
+    templateUrl: './menu.component.html',
+    styleUrls: ['./menu.component.css']
 })
 export class MenuComponent implements OnInit {
-    
+
     items: MenuItem[];
-    toggle:boolean = true;
-    
+    toggle: boolean = true;
+
     activeMenu(event) {
         let node;
         if (event.target.tagName === "A") {
@@ -27,15 +27,15 @@ export class MenuComponent implements OnInit {
         }
         node.classList.add("active")
     }
-    constructor(private router: Router) {}
+    constructor(private router: Router) { }
     checkActiveState(givenLink) {
         console.log(this.router.url);
         if (this.router.url.indexOf(givenLink) === -1) {
-          return false;
+            return false;
         } else {
-          return true;
+            return true;
         }
-      }
+    }
     ngOnInit() {
         this.items = [{
             items: [
@@ -47,11 +47,12 @@ export class MenuComponent implements OnInit {
                     routerLink: ['/vitals'],
                     routerLinkActiveOptions: { exact: true }
                 },
-                { label: 'Conditions', icon: 'pi pi-fw pi-two',
-            },
-                {label: 'Visits', icon: 'pi pi-fw pi-three'},
                 {
-                    label: 'Meds', 
+                    label: 'Conditions', icon: 'pi pi-fw pi-two',
+                },
+                { label: 'Visits', icon: 'pi pi-fw pi-three' },
+                {
+                    label: 'Meds',
                     icon: 'pi pi-fw pi-four',
                     styleClass: '',
                     url: '/meds',
@@ -66,9 +67,13 @@ export class MenuComponent implements OnInit {
                     routerLink: ['/allergies'],
                     routerLinkActiveOptions: { exact: true }
                 },
-                {   label: 'Immunization', icon: 'pi pi-fw pi-six'},
-                    {label: 'Medical Results', icon: 'pi pi-fw pi-seven'},
-                    {label: 'Notes', icon: 'pi pi-fw pi-eight'}
+                {
+                    label: 'Immunization', icon: 'pi pi-fw pi-six', url: '/immunization',
+                    routerLink: ['/immunization'],
+                    routerLinkActiveOptions: { exact: true }
+                },
+                { label: 'Medical Results', icon: 'pi pi-fw pi-seven' },
+                { label: 'Notes', icon: 'pi pi-fw pi-eight' }
             ]
         }];
     }

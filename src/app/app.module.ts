@@ -36,6 +36,8 @@ import { AllergiesComponent } from './components/screencomponents/allergies/alle
 import { AllergiesTableComponent } from './components/tableComponents/allergies-table/allergies-table.component';
 import { CircleProgressComponent } from './components/chartComponents/circle-progress/circle-progress.component';
 import { HeightBarchartComponent } from './components/chartComponents/height-barchart/height-barchart.component';
+import { ImmunizationComponent } from './components/screenComponents/immunization/immunization.component';
+import { ImmuneTableComponent } from './components/tableComponents/immune-table/immune-table.component';
 
 
 
@@ -59,7 +61,9 @@ import { HeightBarchartComponent } from './components/chartComponents/height-bar
     AllergiesComponent,
     AllergiesTableComponent,
     CircleProgressComponent,
-    HeightBarchartComponent
+    HeightBarchartComponent,
+    ImmunizationComponent,
+    ImmuneTableComponent
   ],
 
   imports: [
