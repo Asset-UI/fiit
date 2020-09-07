@@ -1,0 +1,38 @@
+        <div [ngClass]="{'old': toggle, 'new': !toggle}" class="p-col-12 d-flex px-0 p-justify-between Donut old">
+            <div class="p-col-4 clicked" (click)="change()" [ngClass]="{'clicked': toggle, 'notclicked': !toggle}">
+                <div class="DonutChart">
+                    <circle-progress [percent] = "90" [outerStrokeColor] = "'#FF4A31'" outerStrokeGradientStopColor = "#FF4A31" [imageSrc]= "'assets/images/CircleIcon1.svg'" ></circle-progress>
+                </div>
+                <div class="GraphDataContainerColDirection">
+                    <div class="Vitals">
+                        <span>85%</span>
+                        <span class="CustWidth">Stroke Risk</span>
+                    </div>
+                </div>
+            </div>
+            <div class="p-col-4 clicked" (click)="change()" [ngClass]="{'clicked': toggle, 'notclicked': !toggle}">
+                <div class="DonutChart">
+                    <circle-progress class="CW" [percent] = "50" [outerStrokeColor] = "'#1EB5FC'" outerStrokeGradientStopColor = "#1EB5FC" [imageSrc]= "'assets/images/CircleIcon2.svg'"></circle-progress>
+                </div>
+                <div class="GraphDataContainerColDirection">
+                    <div class="Vitals">
+                        <span>55%</span>
+                        <span>Type2 Diabetes Risk</span>
+                    </div>
+                </div>
+            </div>
+            <div class="p-col-4 clicked" (click)="change()" [ngClass]="{'clicked': toggle, 'notclicked': !toggle}">
+                <div class="DonutChart">
+                    <circle-progress [percent] = "25" [outerStrokeColor] = "'#CAF369'" outerStrokeGradientStopColor = "#CAF369" [imageSrc]= "'assets/images/CircleIcon3.svg'"></circle-progress>
+                </div>
+                <div class="GraphDataContainerColDirection">
+                    <div class="Vitals">
+                        <span>25%</span>
+                        <span>Cardiovascular Risk</span>
+                    </div>
+                </div>
+            </div>
+            <div [ngClass]="{'hide': toggle, 'show': !toggle}" class="CounterGraph">
+                <app-linechart></app-linechart>
+            </div>
+        </div>

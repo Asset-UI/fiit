@@ -1,0 +1,1266 @@
+/* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: 'MontserratR';
+    src: url('../src/assets/fonts/Montserrat-Regular.ttf');
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'MontserratSB';
+    src: url('../src/assets/fonts/Montserrat-SemiBold.ttf');
+}
+@font-face {
+    font-family: 'RobotoR';
+    src: url('../src/assets/fonts/Roboto-Regular.ttf');
+}
+@font-face {
+    font-family: 'RobotoM';
+    src: url('../src/assets/fonts/Roboto-Medium.ttf');
+}
+@font-face {
+    font-family: 'RobotoB';
+    src: url('../src/assets/fonts/Roboto-Bold.ttf');
+}
+
+.MontserratR {
+    font-family: MontserratR !important;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.MontserratSB {
+    font-family: MontserratSB !important;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.RobotoR {
+    font-family: RobotoR !important;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.RobotoM {
+    font-family: RobotoM !important;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.RobotoB {
+    font-family: RobotoB !important;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    margin: 0 !important;
+}
+.MainContainer {
+width: 100%;
+margin: 0 !important;
+height: 100vh;
+overflow: hidden;
+background: #F9FAFC 0% 0% no-repeat padding-box;
+}
+.NavBarContainer {
+    padding: 0;
+    height: 100%;
+    width: 15%;
+    overflow: hidden;
+    border-radius: 0px 42px 0 0px;
+    background: transparent linear-gradient(212deg, var(--unnamed-color-080647) 0%, #086078 100%) 0% 0% no-repeat padding-box;
+    background: transparent linear-gradient(212deg, #080647 0%, #086078 100%) 0% 0% no-repeat padding-box;
+    opacity: 1;
+    position: relative;
+}
+.ContentContainer {
+    width: auto;
+    padding: 0 35px;
+    position: relative;
+    height: 100%;
+    margin-right: auto;
+    min-width: min-content;
+    max-width: 85%;
+    transition: 1s;
+}
+.p-menu{
+    border: 0;
+    width: 100% !important;
+    height: 100%;
+}
+.FiltersComponent {
+    background: #f9fafc00 0% 0% no-repeat padding-box;
+    opacity: 1;
+    backdrop-filter: blur(25px);
+    -webkit-backdrop-filter: blur(25px);
+    padding: 25px 35px;
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+    margin: 0;
+    align-items: center;
+    top: 0;
+    left: 0;
+    height: 85px;
+}
+.p-dropdown, input#multiple {
+    margin: 0 5px;
+    max-height: 35px;
+    background: #fff 0% 0% no-repeat padding-box;
+    border-radius: 21px;
+    opacity: 1;
+    text-align: left;
+    font: 12px/14px RobotoM;
+    letter-spacing: 0px;
+    color: #000;
+    opacity: 1;
+    align-items: center;
+    padding: 5px 10px;
+    border: 0 !important;
+}
+p-dropdown:last-child {
+    position: relative;
+}
+.p-dropdown-label {
+   color: #000100;
+}
+.p-grid.FiltersComponent h2 {
+    color: var(--unnamed-color-064862);
+    text-align: center;
+    font: normal normal normal 16px/19px MontserratR;
+    letter-spacing: -0.16px;
+    color: #064862;
+    opacity: 1;
+    font-weight: bold;
+    margin-right: 5px;
+}
+.CW image.ng-star-inserted {
+   width: 18%; 
+}
+.d-flex {
+    display: flex;
+}
+.p-relative{
+    position: relative;
+}
+p-card p-header h2 {
+    text-align: center;
+    letter-spacing: -0.56px;
+    color: #064862;
+    opacity: 1;
+    font: 28px/34px RobotoM;
+    margin: 0 auto;
+    text-transform: capitalize;
+}
+.Donut div.p-col-4 {
+    position: relative;
+    display: flex;
+    height: auto;
+    max-height: 100px;
+    cursor: pointer;
+    padding: 0;
+}
+.Charts {
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: 100%;
+    margin-left: auto;
+    padding: 0;
+    padding-left: 35px;
+    padding-bottom: 65px;
+    width: 70%;
+    padding-top: 95px;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+.Charts::-webkit-scrollbar, .RightMenu::-webkit-scrollbar {
+    display: none;
+  }
+.DataContainer {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    height: 100%;
+}
+.CardContainer {
+    box-shadow: 0px 10px 30px #7088D21A;
+    border-radius: 15px;
+    opacity: 1;
+    height: calc(100% - 160px);
+    width: auto;
+    margin-right: auto;
+    padding: 0;
+    min-width: 30%;
+    margin-top: 95px;
+}
+.p-menu .p-submenu-header {
+    display: none !important;
+}
+.p-menu ul {
+    height: 100%;
+    background: transparent linear-gradient(212deg, var(--unnamed-color-080647) 0%, #086078 100%) 0% 0% no-repeat padding-box;
+    background: transparent linear-gradient(212deg, #080647 0%, #086078 100%) 0% 0% no-repeat padding-box;
+    border-radius: 0px 42px 0px 0px;
+    opacity: 1;
+    padding-top: 200px !important;
+}
+.p-card {
+    color: #333333;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 10px 30px #7088D21A;
+    border-radius: 15px;
+    opacity: 1;
+    height: 80%;
+    margin-right: auto;
+    padding: 25px .0;
+    width: 100%;
+    height: 100%;
+    min-height: 560px;
+}
+@font-face {
+    font-family: 'icomoon';
+    font-display: auto;
+    src: url('../src/assets/icons/fonts/icomoon.eot');
+    src: url('../src/assets/icons/fonts/icomoon.eot?#iefix') format('embedded-opentype'), url('../src/assets/icons/fonts/icomoon.ttf') format('truetype'), url('../src/assets/icons/fonts/icomoon.woff') format('woff'), url('../src/assets/icons/fonts/icomoon.svg?#primeicons') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'icomoon1';
+    font-display: auto;
+    src: url('../src/assets/icons/fonts/icomoon1.eot');
+    src: url('../src/assets/icons/fonts/icomoon1.eot?#iefix') format('embedded-opentype'), url('../src/assets/icons/fonts/icomoon1.ttf') format('truetype'), url('../src/assets/icons/fonts/icomoon1.woff') format('woff'), url('../src/assets/icons/fonts/icomoon1.svg?#primeicons') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+p-dropdown:last-child .p-dropdown .pi-chevron-down:before {
+    font-size: 9px;
+    content: "\e911" !important;
+    font-family: 'icomoon1' !important;
+    width: 20px;
+    display: flex;
+    margin-left: 20px;
+}
+p-dropdown:last-child:before {
+    font-size: 27px;
+    content: "\e910" !important;
+    font-family: 'icomoon1' !important;
+    display: inline-flex;
+    position: relative;
+    color: #45bcf5;
+    margin: auto;
+    vertical-align: middle;
+    left: -10px;
+    cursor: pointer;
+}
+.pi-one:before {
+    content: "\e902" !important;
+    font-family: 'icomoon' !important;
+
+}
+.pi-two:before {
+    content: "\e904" !important;
+        font-family: 'icomoon' !important;
+
+}
+.pi-three:before {
+    content: "\e907" !important;
+        font-family: 'icomoon' !important;
+
+}
+.pi-four:before {
+    content: "\e903" !important;
+        font-family: 'icomoon' !important;
+
+}
+.pi-five:before {
+    content: "\e901" !important;
+        font-family: 'icomoon' !important;
+
+}
+.pi-six:before {
+content: "\e906" !important;
+    font-family: 'icomoon' !important;
+
+}
+.pi-seven:before {
+    content: "\e900" !important;
+        font-family: 'icomoon' !important;
+
+}
+.pi-eight:before {
+    content: "\e905" !important;
+        font-family: 'icomoon' !important;
+
+}
+
+img#logo {
+    position: absolute;
+    top: 37px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: transparent 0% 0% no-repeat padding-box;
+    opacity: 1;
+    width: auto;
+    height: auto;
+}
+.p-menu .p-menuitem-link:focus {
+    outline: none;
+    outline-offset: 0;
+    box-shadow: none;
+    border: 0 !important;
+}
+.p-menu .p-menuitem-link:not(.p-disabled):hover {
+    background: none;
+    /* border-left: 2px solid red;
+    background-color: red; */
+}
+.p-menu .p-menuitem-link:not(.p-disabled):hover > .p-menuitem-text, .p-menu .p-menuitem-link:not(.p-disabled):hover > .p-menuitem-icon {
+    color: #fff;
+    opacity: 1;
+}
+.p-menu .p-menuitem-link .p-menuitem-text, .p-menu .p-menuitem-link .p-menuitem-icon {
+    color: #94B2E6;
+    opacity: .5;
+}
+.p-menu .p-menuitem-link .p-menuitem-icon::before {
+    font-size: 25px;
+    /* font: icon; */
+}
+.p-menu .p-menuitem-link .p-menuitem-text {
+    font-size: 13px;
+    font-family: MontserratR;
+}
+.p-menu .p-menuitem-link .p-menuitem-icon {
+    font-size: 25px;
+    /* font: icon;
+    width: 25px; */
+}
+p-dropdownitem:first-child{
+    display: none;
+}
+p-dropdown:last-child p-dropdownitem:first-child{
+    display: block;
+}
+p-dropdown:last-child p-dropdownitem{
+    color: #000;
+}
+.p-inputwrapper-focus, .p-inputwrapper-focus:focus, .p-inputwrapper-focus:hover, p-inputwrapper-focus{
+    outline: none !important;
+    border: 0 !important;
+}
+.p-datatable .p-datatable-tbody > tr > td {
+    border: 0;
+    padding: 40px 25px 0;
+    text-align: left;
+    font: normal normal normal 12px/20px RobotoR;
+    letter-spacing: -0.36px;
+    color: #4D4F5C;
+    opacity: 1;
+}
+.p-dropdown .p-dropdown-label {
+    font: 12px/14px RobotoR;
+    letter-spacing: 0px;
+    color: #000100;
+    opacity: 1;
+}
+.pi-chevron-down:before {
+    font-size: 13px;
+    font-weight: 900;
+}
+
+p-dropdown:last-child .p-dropdown {
+    background-color: #FF4A31;
+}
+p-dropdown:last-child .p-dropdown-label, p-dropdown:last-child .p-dropdown-trigger {
+    color: #FFF;
+    break-after: avoid-column;
+    overflow-wrap: break-word;
+    transition-delay: 1s;
+}
+.Info {
+    width: auto;
+    max-width: 335px;
+    padding: 0;
+    margin: auto;
+    justify-content: space-between;
+    border-bottom: 1px solid #7070703b;
+}
+.Info span label {
+    width: 100%;
+    position: relative;
+    display: block;
+    text-align: left;
+    font: normal normal bold 18px/28px RobotoB;
+    letter-spacing: 0px;
+    color: #000000;
+    opacity: 1;
+    line-height: 1.3;
+}
+.p-card .p-card-content{
+    padding: 10px 0 !important;
+}
+.p-card .p-card-footer {
+    text-align: center;
+    position: relative;
+    display: block;
+    width: 100%;
+}
+.Info span label:first-child {
+    text-align: left;
+    font: normal normal normal 14px/17px RobotoM;
+    letter-spacing: 0px;
+    color: #1EB5FC;
+    text-transform: uppercase;
+    opacity: 1;
+    margin-bottom: 5px;
+}
+.p-card .p-card-footer p {
+    margin-bottom: 0;
+    color: var(--unnamed-color-064862);
+text-align: center;
+font: normal normal normal 14px/17px RobotoR;
+letter-spacing: 0px;
+color: #064862;
+opacity: 1;
+}
+.chartjs-render-monitor {
+    border-radius: 10px;
+    opacity: 1;
+    padding: 10px;
+    width: 100% !important;
+    /* height: 100% !important; */
+}
+.Line .chartjs-render-monitor, .Bar .chartjs-render-monitor {
+    padding-top: 65px;
+}
+.chartjs-size-monitor, .chartjs-size-monitor-expand, .chartjs-size-monitor-shrink, ::ng-deep .chartjs-render-monitor {
+    direction: rtl;
+    display: flex !important;
+    flex-direction: revert;
+    mix-blend-mode: difference;
+}
+.Purple .chartjs-render-monitor {
+    background: #08295A 0% 0% no-repeat padding-box;
+    box-shadow: 1px 3px 15px #1229340D;
+}
+.Orange .chartjs-render-monitor {
+    background: #FF4A31 0% 0% no-repeat padding-box;
+    box-shadow: 1px 3px 15px #1229340D;
+}
+.Charts .p-col-12.d-flex.p-justify-between {
+    background-color: #fff;
+    border-radius: 10px;
+    height: 115px;
+    transition: height 1s;
+    position: relative;
+}
+.Donut.new {
+    background-color: #08295a !important;
+    height: 400px !important;
+    transition: height 1s !important;
+}
+.px-0{
+    padding-left: 0;
+    padding-right: 0;
+}
+.pr-Custom{
+    padding-right: 0px;
+    padding-left: 0px;
+    margin-left: auto;
+    padding-top: 10px;
+    width: calc(50% - 10px);
+    position: relative;
+}
+.pl-Custom {
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-right: auto;
+    padding-top: 10px;
+    position: relative;
+    width: calc(50% - 10px);
+}
+.pb-0{
+    padding-bottom: 0;
+}
+.Charts div.d-flex .p-col-6 {
+    position: relative;
+}
+.GraphDataContainer {
+    position: absolute;
+    top: 30px;
+    left: 0;
+    right: 0;
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    height: 35px;
+    z-index: 9;
+    margin: auto;
+}
+.Vitals {
+    vertical-align: middle;
+    height: fit-content;
+    margin: auto 0;
+}
+.GraphDataContainer .Vitals:first-child {
+    display: grid;
+}
+.Orange .GraphDataContainer .Vitals:first-child span:last-child {
+    color: #fff !important;
+}
+.GraphDataContainer .Vitals:first-child span:first-child {
+    display: list-item;
+    color: var(--unnamed-color-ffffff);
+    text-align: left;
+    font: normal normal 600 12px/13px MontserratSB;
+    letter-spacing: -0.12px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    opacity: 1;
+}
+.GraphDataContainer .Vitals:first-child span:last-child {
+    color: var(--unnamed-color-1eb5fc);
+text-align: left;
+font: normal normal normal 12px/13px RobotoR;
+letter-spacing: -0.36px;
+color: #1EB5FC;
+opacity: 1;
+margin-left: -10px;
+    margin-top: 5px;
+}
+.GraphDataContainer .Vitals span:first-child {
+    color: var(--unnamed-color-ffffff);
+    text-align: right;
+    font: normal normal bold 24px/14px RobotoB;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+    margin: 0 5px;
+}
+.GraphDataContainer .Vitals span:last-child {
+    color: var(--unnamed-color-ffffff);
+    text-align: left;
+    font: normal normal 600 10px/12px Proxima Nova;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+}
+.Bar .Vitals span {
+    color: #06709a !important;
+}
+.orange .Vitals span {
+    color: #FFF !important;
+}
+.m-Custom{
+    margin-left: auto;
+    margin-right: 5px;
+}
+.White .chartjs-render-monitor{
+    background-color: #fff;
+}
+.DonutChart {
+    position: relative;
+    width: 60%;
+    margin-right: auto;
+}
+.GraphDataContainerColDirection {
+    position: relative;
+    width: 40%;
+    margin-right: auto;
+    display: flex;
+}
+.GraphDataContainerColDirection .Vitals {
+    display: grid;
+    position: relative;
+    left: -25px;
+}
+.GraphDataContainerColDirection .Vitals span:first-child {
+    color: var(--unnamed-color-064862);
+text-align: left;
+font: 26px/32px RobotoM;
+letter-spacing: 0px;
+color: #064862;
+opacity: 1;
+}
+
+.GraphDataContainerColDirection .Vitals span:last-child {
+    text-align: left;
+    font: normal normal normal 14px/17px RobotoR;
+    letter-spacing: -0.21px;
+    color: #949494;
+    opacity: 1;
+}
+.Info span {
+    width: 38%;
+    padding: 15px;
+    justify-content: flex-start;
+    display: grid;
+    margin-left: auto;
+}
+svg.ng-star-inserted {
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    height: 100px;
+}
+image.ng-star-inserted {
+    x: calc(50% - 10%);
+    y: calc(50% - 10%);
+    alignment-baseline: baseline;
+    text-anchor: middle;
+    width: 20%;
+}
+.CustWidth{
+    max-width: min-content;
+}
+p-dropdown:last-child .p-dropdown .p-hidden-accessible input {
+    color: #fff !important;
+}
+.p-dropdown:not(.p-disabled).p-focus{
+    outline: none !important;
+    outline-offset: none !important;
+    box-shadow: none !important;
+    border: none !important;
+}
+.CounterGraph {
+    position: absolute;
+    width: 100%;
+    background-color: #08295a03;
+    height: 60%;
+    bottom: 0;
+    left: 0;
+    padding: 10px 25px;
+}
+.hide {
+    background-color: #ffffff0d !important;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s linear 0.33s, opacity 0.33s linear;
+}
+.show {
+    visibility: visible;
+    opacity: 1;
+    transition: visibility 0s linear 0.33s, opacity 0.33s linear;
+    transition-delay: 0.45s;
+}
+.CounterGraph canvas.chartjs-render-monitor {
+    height: auto;
+    max-height: 125px;
+}
+.Donut.new .GraphDataContainerColDirection .Vitals span {
+    color: #fff;
+}
+.Bar .Vitals span {
+    color: #064862 !important;
+}
+
+app-linechart {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+    height: fit-content;
+}
+.CounterGraph canvas.chartjs-render-monitor {
+    padding: 0;
+    max-width: 90%;
+    margin: auto;
+    min-height: 200px;
+}
+.Donut.new .p-col-4 {
+    opacity: 0.5;
+}
+.p-dropdown-panel.p-component {
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border: 0;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+    /* top: 35px !important; */
+}
+.p-dropdown.p-component.p-dropdown-open {
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    background-color: #08295A;
+}
+.p-dropdown.p-component.p-dropdown-open.p-dropdown .p-dropdown-label {
+    color: #fff;
+}
+.p-dropdown-panel .p-dropdown-items .p-dropdown-item:not(.p-highlight):not(.p-disabled):hover, .p-dropdown-panel .p-dropdown-items .p-dropdown-item.p-highlight {
+    color: #FFf !important;
+    background: #ff4831;
+}
+.p-dropdown-panel .p-dropdown-items .p-dropdown-item {
+    color: #08295A !important;
+    font: 12px/14px RobotoR;
+    padding: 10px 30px !important;
+
+}
+.p-dropdown .p-dropdown-trigger, p-dropdown:last-child .p-dropdown .pi-chevron-down:before {
+    transition: .5s;
+}
+.p-dropdown.p-component.p-dropdown-open .p-dropdown-trigger .pi-chevron-down:before {
+    color: #ffff;
+    -webkit-transform: scaleY(-1) !important;
+    transform: scaleY(-1) !important;
+    transition: .5s;
+}
+.p-dropdown.p-component.p-dropdown-open .p-dropdown-trigger {
+    -webkit-transform: scaleY(-1) !important;
+    transform: scaleY(-1) !important;
+}
+input#multiple {
+    padding: 15px 25px;
+    font: 12px/14px RobotoR;
+    color: #000100;
+    min-width: 100%;
+}
+.p-inputwrapper-filled.ng-dirty .p-calendar button {
+    display: none;
+}
+.p-button.p-component.p-button-icon-only {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background: transparent;
+    color: #000000;
+    border-color: #fff;
+    border: 0;
+}
+.p-button:focus, .p-inputtext:enabled:focus {
+    box-shadow: none !important;
+}
+.p-inputtext:enabled:focus, .p-calendar p-calendar input#multiple{
+    border-bottom-right-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
+    /* background-color: #08295A !important; */
+}
+.pi-calendar:before {
+    content: "\e902" !important;
+    font-size: 13px;
+    color: #848484;
+}
+.p-calendar {
+   width: -webkit-fill-available;
+}
+.p-calendar .p-datepicker {
+    padding: 10px 0 0 0;
+    left: 5px !important;
+    top: 25px !important;
+    border: 0;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    width: inherit !important;
+}
+.p-datepicker table td{
+    padding: 0;
+}
+.p-datepicker table td > span {
+    width: 1rem;
+    height: 1rem;
+    padding: .7rem;
+}
+.p-datepicker table th{
+    padding: 0;
+}
+.p-datepicker table {
+    font-size: .8rem;
+}
+p-calendar {
+    width: 20%;
+    min-width: 180px;
+    margin-right: 10px;
+    margin-left: 5px;
+}
+.pi-chevron-right:before, .pi-chevron-left:before{
+    color: #fff;
+}
+.p-datepicker table td.p-datepicker-today > span {
+    background: #082959 0% 0% no-repeat padding-box !important;
+    color: #fff;
+}
+.p-datepicker table td > span.p-highlight {
+    background: #FF4A31 0% 0% no-repeat padding-box !important;
+    color: #fff;
+}
+.p-datepicker:not(.p-disabled) table td span:not(.p-highlight):not(.p-disabled):hover{
+    background: #ff4a318a  0% 0% no-repeat padding-box !important;
+    color: #fff;
+}
+.p-datepicker:not(.p-datepicker-inline) .p-datepicker-header {
+    background: #08295a;
+    padding: 10px;
+}
+.p-datepicker .p-datepicker-header .p-datepicker-title span{
+    color: #fff ;
+}
+.p-datepicker .p-datepicker-header .p-datepicker-prev:enabled:hover, .p-datepicker .p-datepicker-header .p-datepicker-next:enabled:hover {
+    color: #ff4a31 !important;
+}
+.p-datepicker .p-datepicker-header .p-datepicker-prev:focus, .p-datepicker .p-datepicker-header .p-datepicker-next:focus, .p-datepicker:not(.p-disabled) table td span:not(.p-highlight):not(.p-disabled):focus, .p-datepicker table td > span:focus {
+    box-shadow: 0 0 0 0.2rem #ff4a31 !important;
+}
+/* :host ::ng-deep .p-datatable-responsive-demo .p-datatable-tbody > tr > td .p-column-title {
+        display: none;
+} */
+.MedsContainer, .AllergiesContainer {
+    position: relative;
+    height: calc(100% - 110px);
+    margin: 0;
+    margin-top: 95px;
+    padding: 20px;
+    /* background-color: #fff; */
+    background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 10px 30px #7088D21A;
+    border-radius: 10px;
+    opacity: 1;
+    width: 100%;
+    overflow: hidden;
+}
+.Title {
+    position: relative;
+    text-align: left;
+    font: normal normal bolder 23px/61px MontserratR;
+    letter-spacing: 0px;
+    color: #FF4A31;
+    opacity: 1;
+    display: flex;
+    margin-bottom: 10px;
+    width: 50%;
+}
+.Title::before {
+    content: "\e903" !important;
+    font-family: 'icomoon' !important;
+    font-size: 26px;
+    font-weight: 100;
+    margin-right: 10px;
+}
+.ui-inputgroup {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    width: 50%;
+    margin-left: auto;
+}
+.PageHeader {
+    position: relative;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    vertical-align: middle;
+    align-items: center;
+}
+span.ui-button-icon-left.ui-icon.ui-c.pi.pi-search {
+    margin-left: auto;
+    font-size: 14px;
+    display: flex;
+    vertical-align: middle;
+    align-items: center;
+    color: #BCBCCB;
+    margin-right: 5px;
+}
+.ui-inputgroup input {
+    border: 0;
+    text-align: left;
+    font: normal normal normal 13px/20px RobotoR;
+    letter-spacing: 0px;
+    color: #494b57;
+    opacity: 1;
+    outline: 0;
+    padding: 0;
+    margin: 0;
+    max-width: 131px;
+}
+.p-datatable .p-datatable-thead > tr > th {
+    background: #74A3B5 0% 0% no-repeat padding-box !important;
+    font: normal normal 11px/13px RobotoM !important;
+    letter-spacing: 0px;
+    color: #FFFFFF !important;
+    opacity: 1;
+    border: 0 !important;
+    padding: 15px 25px;
+}
+.p-datatable .p-datatable-thead > tr > th:first-child {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.p-datatable .p-datatable-thead > tr > th:last-child {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.p-datatable .p-datatable-tbody > tr > td {
+    border: 0;
+}
+.Tooltip{
+    margin-left: auto;
+    margin-right: -15px;
+    width: 20px;
+    opacity: 0;
+    z-index: 9999;
+    cursor: pointer;
+}
+.p-datatable .p-datatable-tbody > tr > td:first-child{
+    text-align: left;
+    font: normal normal 14px/20px RobotoM;
+    letter-spacing: -0.2px;
+    color: #4D4F5C;
+    opacity: 1;
+}
+.p-datatable-scrollable-header-box {
+    padding-right: 0 !important;
+}
+.RightMenu {
+    position: fixed;
+    height: 100%;
+    background-color: #064862 ;
+    right: 0;
+    top: 0;
+    margin-left: auto;
+    z-index: 11;
+    transition: 1s;
+    overflow: auto;
+    border-radius: 42px 0px 0px 0px;
+}
+span.ArrowAddon {
+    position: absolute;
+    right: -5px;
+    top: 187px;
+    width: 23px;
+    height: 34px;
+    background: var(--unnamed-color-064862) 0% 0% no-repeat padding-box;
+    background: #064862 0% 0% no-repeat padding-box;
+    border-radius: 11px 0px 0px 11px;
+    opacity: 1;
+}
+.MainContainer.xxx .ContentContainer {
+    max-width: 65%;
+}
+.MainContainer.xxx .RightMenu {
+    width: 20%;
+    padding: 85px 20px 10px;
+}
+.MainContainer.aaa .RightMenu {
+    width: 0;
+}
+.MainContainer.xxx .RightMenu * {
+    visibility: visible;
+    opacity: 1;
+    transition: visibility 0s linear 0.33s, opacity 0.33s linear;
+    transition-delay: 0.45s;
+}
+.MainContainer.aaa .RightMenu * {
+    background-color: #ffffff0d !important;
+    visibility: hidden;
+    opacity: 0;
+    /* transition: visibility 0s linear 0.33s, opacity 0.33s linear; */
+}
+.MainContainer .RightMenu .p-card.p-component {
+    min-height: 18vh;
+    height: 18vh;
+    padding: 25px;
+    margin-bottom: 15px;
+    overflow: hidden;
+    background: #FFFFFF0D 0% 0% no-repeat padding-box;
+box-shadow: 1px 3px 15px #1229340D;
+border-radius: 10px;
+opacity: 1;
+}
+.MainContainer .RightMenu .p-card.p-component .p-card-body, .MainContainer.xxx .RightMenu .p-card.p-component .p-card-content {
+    height: fit-content;
+    padding: 0 !important;
+    margin: 0;
+    overflow: hidden;
+    /* max-height: 80px; */
+}
+.MainContainer .RightMenu .p-card.p-component .p-card-header {
+    color: var(--unnamed-color-ffffff);
+    text-align: left;
+    font: normal normal 16px/20px RobotoM;
+    letter-spacing: -0.22px;
+    color: #FFFFFF;
+    opacity: 1;
+    padding-bottom: 10px;
+}
+.xxx span.ArrowAddon:after {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 80%;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #0000;
+    content: "";
+    z-index: 99;
+}
+.MainContainer .RightMenu .p-card.p-component .p-card-body .p-card-content p {
+    height: 45%;
+    padding: 0px !important;
+    margin: 0;
+    margin-top: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-all;
+    max-height: 90px;
+    width: 100%;
+    word-break: break-word;
+    white-space: pre-line;
+    color: var(--unnamed-color-ffffff);
+    text-align: left;
+    font: normal normal normal 12px/20px Roboto;
+    letter-spacing: -0.36px;
+    color: #FFFFFF;
+    opacity: 1;
+    display: inline-block;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+.RightMenu h2.Title {
+    color: #fff;
+    height: 45px;
+    width: -webkit-fill-available;
+}
+.p-menuitem.active {
+    border-left: 2px solid #FF4A31 !important;
+    transition: 1s !important;
+    animation-direction: normal !important;
+    border-left-style: groove !important;
+}
+.p-menuitem.active .p-menuitem-link .p-menuitem-text, .p-menuitem.active .p-menuitem-link .p-menuitem-icon {
+    color: #FF4A31 !important;
+    opacity: 1;
+}
+.RightMenu h2.Title:before {
+    content: none !important;
+}
+.TitleCustSontainer {
+    position: fixed;
+    height: fit-content;
+    width: 270px;
+    top: 0;
+    left: auto;
+    background-color: #064862;
+    border-radius: 20px 0px 0px 0px;
+}
+.xxx p-dropdown:last-child .p-dropdown-label {
+    max-width: 40px;
+}
+span.ArrowAddon:before {
+    content: "\e911";
+    color: #fff;
+    margin: auto;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    font-size: 10px;
+    position: absolute;
+    left: 0;
+    right: 5px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    font-family: 'icomoon1';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    display: inline-block;
+    -webkit-font-smoothing: antialiased;
+    transition: 1s;
+    transform: rotate(90deg);
+    cursor: pointer;
+}
+.xxx span.ArrowAddon:before{
+    transform: rotate(270deg);
+    right: 0;
+}
+.xxx .p-dropdown-panel .p-dropdown-items .p-dropdown-item{
+    padding: 10px !important;
+}
+.AllergiesContainer .ui-inputgroup input {
+    min-width: 150px;
+}
+.AllergiesContainer .Title::before {
+    content: "\e904" !important;
+}
+.AllergiesContainer .p-datatable .p-datatable-tbody > tr {
+    border-bottom: 1px solid rgb(191 191 191 / 0.3);
+}
+.AllergiesContainer  .p-datatable .p-datatable-tbody > tr > td {
+    border: 0;
+    padding: 40px 25px;
+}
+.RightMenu p-header {
+    display: flex;
+}
+.RightMenu p-header h2 {
+    color: var(--unnamed-color-ffffff);
+    text-align: center;
+    font: normal normal 24px/29px RobotoM;
+    letter-spacing: -0.48px;
+    color: #FFFFFF;
+    opacity: 1;
+    height: fit-content;
+    display: flex;
+    margin: auto;
+}
+.MainContainer .AllergiesContainer .RightMenu .p-card.p-component {
+    min-height: auto;
+    height: auto;
+    padding: 0;
+    overflow: hidden;
+    background: #064862;
+    box-shadow: 0 0 black;
+    opacity: 1;
+    margin: auto;
+}
+.MainContainer.xxx .AllergiesContainer .RightMenu{
+    padding: 20px 10px;
+}
+.AllergiesContainer .RightMenu p-header img {
+    width: 60px !important;
+    height: 60px !important;
+    margin: 0 !important;
+}
+.AllergiesContainer .RightMenu .Info span {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    min-width: 30%;
+    padding: 0 15px;
+    display: grid;
+    margin: auto;
+    justify-content: center;
+    min-height: auto;
+    margin-top: 15px;
+}
+.AllergiesContainer .RightMenu .Info span label:first-child {
+    color: var(--unnamed-color-ffffff);
+    text-align: center;
+    font: normal normal normal 11px/13px RobotoR;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    opacity: 0.61;
+}
+.AllergiesContainer .RightMenu .Info span label {
+    text-align: center;
+    font: normal normal bold 14px/23px RobotoB;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+}
+.AllergiesContainer .RightMenu .Info {
+    width: auto;
+    max-width: 335px;
+    padding: 0;
+    margin: auto;
+    justify-content: space-between;
+    border-bottom: 0;
+}
+.AllergiesContainer .RightMenu .p-card.p-component .p-card-header{
+    padding: 15px;
+}
+.AllergiesContainer .RightMenu .p-card-footer, .AllergiesContainer .RightMenu app-circle-progress .CounterGraph, .AllergiesContainer .RightMenu .Info span label:nth-child(3) {
+    display: none !important;
+}
+.AllergiesContainer .RightMenu .Donut div.p-col-4 {
+    display: block;
+}
+.AllergiesContainer .RightMenu  .DonutChart, .AllergiesContainer .RightMenu  .GraphDataContainerColDirection{
+    width: 100%;
+}
+.AllergiesContainer .RightMenu svg.ng-star-inserted{
+    position: relative;
+    height: 70px;
+}
+.AllergiesContainer .RightMenu .GraphDataContainerColDirection .Vitals {
+    left: 0;
+    text-align: center !important;
+    width: 100%;
+}
+.AllergiesContainer .RightMenu .GraphDataContainerColDirection .Vitals span {
+    text-align: center;
+    color: #fff;
+    width: 100%;
+    font: normal normal  20px/24px RobotoM;
+letter-spacing: 0px;
+    max-width: 70%;
+    margin: 0 auto;
+}
+.AllergiesContainer .RightMenu .GraphDataContainerColDirection .Vitals span:last-child {
+opacity: 0.51;
+letter-spacing: -0.14px;
+font: normal normal normal 9px/11px RobotoR;
+}
+.AllergiesContainer .RightMenu .Donut {
+    margin: 30px 0;
+}
+.AllergiesContainer .RightMenu .Donut.new {
+    background-color: unset !important;
+    height: unset !important;
+}
+.AllergiesContainer .RightMenu .GraphDataContainer {
+    top: 0;
+}
+.AllergiesContainer .RightMenu .p-relative.ChartB {
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 1px 3px 15px #1229340D;
+    border-radius: 10px;
+    opacity: 1;
+    padding-top: 50px;
+    margin: 15px 5px;
+}
+.AllergiesContainer .RightMenu .GraphDataContainer .Vitals:first-child span:first-child {
+    text-align: left;
+    font: normal normal 600 9px/10px MontserratSB;
+    letter-spacing: -0.09px;
+    color: #000000;
+    text-transform: uppercase;
+    opacity: 1;
+    padding: 20px 0 0;
+}
+.AllergiesContainer .RightMenu .chartjs-render-monitor {
+    height: 100px !important;
+}
+.AllergiesContainer .RightMenu .GraphDataContainer .Vitals:first-child span:last-child {
+    text-align: left;
+    font: normal normal  9px/10px RobotoM;
+    letter-spacing: -0.27px;
+    color: #000000;
+    opacity: 0.5;
+}
+.AllergiesContainer .RightMenu .GraphDataContainer .Vitals span:first-child {
+    text-align: right;
+    font: normal normal bold 18px/10px RobotoB;
+    letter-spacing: 0px;
+    color: #064862;
+    opacity: 1;
+}
+.AllergiesContainer .RightMenu .GraphDataContainer .Vitals span:last-child {
+    text-align: left;
+    font: normal normal 600 7px/8px Proxima Nova;
+    letter-spacing: 0px;
+    color: #064862;
+    opacity: 1;
+}
+.AllergiesContainer .RightMenu .Vitals {
+    margin: auto 0 0;
+}

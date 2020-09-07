@@ -1,0 +1,13 @@
+<div class="p-relative ChartB">
+    <div class="GraphDataContainer">
+        <div class="Vitals">
+            <span>Pulse & Heart Rate</span>
+            <span>Avg 99</span>
+        </div>
+        <div class="Vitals">
+            <span>108</span>
+            <span>Beats per Min</span>
+        </div>
+    </div>
+    <p-chart type="line" class="chart chart-line" dir="rtl" legend="true" [options]="options" [data]="pulse_rate_data" (onDataSelect)="selectData($event)"></p-chart>
+</div>

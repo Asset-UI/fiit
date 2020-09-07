@@ -1,0 +1,13 @@
+<div class="p-relative ChartB">
+    <div class="GraphDataContainer">
+        <div class="Vitals">
+            <span>Blood Pressure</span>
+            <span>Avg 110/80</span>
+        </div>
+        <div class="Vitals">
+            <span>120/89</span>
+            <span>mm/Hg</span>
+        </div>
+    </div>
+    <p-chart type="line" class="chart chart-line" dir="rtl" legend="true" [options]="options" [data]="blood_pressure_data" (onDataSelect)="selectData($event)"></p-chart>
+</div>

@@ -1,0 +1,13 @@
+<div class="p-relative ChartB">
+    <div class="GraphDataContainer">
+        <div class="Vitals">
+            <span>Temperature</span>
+            <span>Avg 37°</span>
+        </div>
+        <div class="Vitals">
+            <span>39.8°</span>
+            <span>F</span>
+        </div>
+    </div>
+    <p-chart type="line" class="chart chart-line" dir="rtl" legend="true" [options]="options" [data]="tempreture_data" (onDataSelect)="selectData($event)"></p-chart>
+</div>

@@ -1,0 +1,11 @@
+
+<div class="p-grid MainContainer p-justify-between aaa" [ngClass]="{aaa: shouldShow, xxx: !shouldShow}">
+    <div class="NavBarContainer">
+        <app-menu></app-menu>
+    </div>
+    <div class="ContentContainer">
+        <app-filters></app-filters>
+        <router-outlet></router-outlet>
+        <span class="ArrowAddon" *ngIf="hh" (click)="shouldShow = !shouldShow"></span>
+    </div>
+</div>

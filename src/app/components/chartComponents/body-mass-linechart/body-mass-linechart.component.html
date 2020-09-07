@@ -1,0 +1,13 @@
+<div class="p-relative ChartB">
+    <div class="GraphDataContainer">
+        <div class="Vitals">
+            <span>Body Mass Index (BMI)</span>
+            <span>Avg 18.5</span>
+        </div>
+        <div class="Vitals">
+            <span>19.5</span>
+            <span>Beats per Min</span>
+        </div>
+    </div>
+    <p-chart type="line" class="chart chart-line" dir="rtl" legend="true" [options]="options" [data]="body_mass_data" (onDataSelect)="selectData($event)"></p-chart>
+</div>

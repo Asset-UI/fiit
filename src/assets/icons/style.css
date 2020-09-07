@@ -1,0 +1,51 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?la1x8d');
+  src:  url('fonts/icomoon.eot?la1x8d#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?la1x8d') format('truetype'),
+    url('fonts/icomoon.woff?la1x8d') format('woff'),
+    url('fonts/icomoon.svg?la1x8d#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-EightsTab:before {
+  content: "\e900";
+}
+.icon-FifthTab:before {
+  content: "\e901";
+}
+.icon-FirstTab:before {
+  content: "\e902";
+}
+.icon-FrthTab:before {
+  content: "\e903";
+}
+.icon-SecTab:before {
+  content: "\e904";
+}
+.icon-SvnthTab:before {
+  content: "\e905";
+}
+.icon-SxthTab:before {
+  content: "\e906";
+}
+.icon-ThirdTab:before {
+  content: "\e907";
+}
