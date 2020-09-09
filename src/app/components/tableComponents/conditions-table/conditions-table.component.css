@@ -1,0 +1,8 @@
+.exclamation-icon {
+    color: #1EB5FC;
+    cursor: pointer;
+    margin-left: 5px;
+}
+.exclamation-icon:hover {
+    color: #FF4A31;
+}
