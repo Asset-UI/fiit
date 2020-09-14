@@ -811,7 +811,7 @@ p-calendar {
 /* :host ::ng-deep .p-datatable-responsive-demo .p-datatable-tbody > tr > td .p-column-title {
         display: none;
 } */
-.MedsContainer, .ImuneContainer, .AllergiesContainer {
+.MedsContainer, .ImuneContainer, .AllergiesContainer,.ConditionContainer, .VisitsContainer, .VisitDetailsContainer {
     position: relative;
     height: calc(100% - 110px);
     margin: 0;
@@ -1267,6 +1267,21 @@ font: normal normal normal 9px/11px RobotoR;
 .ImuneContainer .Title::before {
     content: "\e906" !important;
 }
+.ConditionContainer .Title::before {
+    content: "\e904" !important;
+}
+.VisitsContainer .Title::before {
+    content: "\e907" !important;
+}
 .ImuneContainer .ui-inputgroup input {
     min-width: 146px;
+}
+
+.exclamation-icon {
+    color: #1EB5FC;
+    cursor: pointer;
+    margin-left: 5px;
+}
+.exclamation-icon:hover {
+    color: #FF4A31;
 }

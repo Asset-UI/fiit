@@ -38,6 +38,11 @@ import { CircleProgressComponent } from './components/chartComponents/circle-pro
 import { HeightBarchartComponent } from './components/chartComponents/height-barchart/height-barchart.component';
 import { ImmunizationComponent } from './components/screenComponents/immunization/immunization.component';
 import { ImmuneTableComponent } from './components/tableComponents/immune-table/immune-table.component';
+import { ConditionsComponent } from './components/screenComponents/conditions/conditions.component';
+import { ConditionsTableComponent } from './components/tableComponents/conditions-table/conditions-table.component';
+import { VisitsComponent } from './components/screenComponents/visits/visits.component';
+import { VisitsTableComponent } from './components/tableComponents/visits-table/visits-table.component';
+import { VisitDetailsComponent } from './components/screenComponents/visits/visit-details/visit-details.component';
 
 
 
@@ -63,7 +68,12 @@ import { ImmuneTableComponent } from './components/tableComponents/immune-table/
     CircleProgressComponent,
     HeightBarchartComponent,
     ImmunizationComponent,
-    ImmuneTableComponent
+    ImmuneTableComponent,
+    ConditionsComponent,
+    ConditionsTableComponent,
+    VisitsComponent,
+    VisitsTableComponent,
+    VisitDetailsComponent
   ],
 
   imports: [

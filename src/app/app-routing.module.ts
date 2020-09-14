@@ -1,3 +1,6 @@
+import { VisitDetailsComponent } from './components/screenComponents/visits/visit-details/visit-details.component';
+import { VisitsComponent } from './components/screenComponents/visits/visits.component';
+import { ConditionsComponent } from './components/screenComponents/conditions/conditions.component';
 import { ImmunizationComponent } from './components/screenComponents/immunization/immunization.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
@@ -10,6 +13,9 @@ const routes: Routes = [
   { path: 'allergies', component: AllergiesComponent },
   { path: 'meds', component: MedsComponent },
   { path: 'immunization', component: ImmunizationComponent },
+  { path: 'conditions', component: ConditionsComponent },
+  { path: 'visits', component: VisitsComponent },
+  { path: 'visit-details', component: VisitDetailsComponent },
   { path: '**', redirectTo: '' }
   // { path: '**', redirectTo: '' }
 ];

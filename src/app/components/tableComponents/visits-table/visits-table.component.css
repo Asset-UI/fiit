@@ -1,0 +1,13 @@
+.visits-table-row {
+    cursor: pointer;
+}
+.visits-table-row:hover {
+    cursor: pointer;
+    background-color: #eefaff;
+}
+.visits-table-row:hover td{
+   border-radius: 10px;
+}
+::ng-deep .visits-table .p-datatable .p-datatable-tbody > tr > td {
+    padding: 17px 10px;
+}

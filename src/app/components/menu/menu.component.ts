@@ -48,9 +48,21 @@ export class MenuComponent implements OnInit {
                     routerLinkActiveOptions: { exact: true }
                 },
                 {
-                    label: 'Conditions', icon: 'pi pi-fw pi-two',
+                    label: 'Conditions',
+                    icon: 'pi pi-fw pi-two',
+                    styleClass: '',
+                    url: '/conditions',
+                    routerLink: ['/conditions'],
+                    routerLinkActiveOptions: { exact: true }
                 },
-                { label: 'Visits', icon: 'pi pi-fw pi-three' },
+                {
+                    label: 'Visits',
+                    icon: 'pi pi-fw pi-three',
+                    styleClass: '',
+                    url: '/visits',
+                    routerLink: ['/visits'],
+                    routerLinkActiveOptions: { exact: true }
+                },
                 {
                     label: 'Meds',
                     icon: 'pi pi-fw pi-four',
