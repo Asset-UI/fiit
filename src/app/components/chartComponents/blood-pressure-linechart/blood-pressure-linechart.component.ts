@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { MessageService } from 'primeng/api';
+import { AllergiesComponent } from '../../screencomponents/allergies/allergies.component';
 
 @Component({
   selector: 'app-blood-pressure-linechart',
@@ -7,7 +8,16 @@ import { MessageService } from 'primeng/api';
   styleUrls: ['./blood-pressure-linechart.component.css'],
   providers: [MessageService]
 })
-export class BloodPressureLinechartComponent {
+export class BloodPressureLinechartComponent implements OnInit {
+    @Input() chartModel: AllergiesComponent;
+  
+    ngOnInit() {
+       this.methodIWantToCallToUpdateSettings();
+    }
+  
+    methodIWantToCallToUpdateSettings(): void {
+       //do your thing
+    }
 
   blood_pressure_data: any;    
   options: any;

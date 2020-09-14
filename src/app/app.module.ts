@@ -38,6 +38,8 @@ import { CircleProgressComponent } from './components/chartComponents/circle-pro
 import { HeightBarchartComponent } from './components/chartComponents/height-barchart/height-barchart.component';
 import { ImmunizationComponent } from './components/screenComponents/immunization/immunization.component';
 import { ImmuneTableComponent } from './components/tableComponents/immune-table/immune-table.component';
+import { NotesComponent } from './components/screenComponents/notes/notes.component';
+import { NotesTableComponent } from './components/tableComponents/notes-table/notes-table.component';
 
 
 
@@ -63,7 +65,9 @@ import { ImmuneTableComponent } from './components/tableComponents/immune-table/
     CircleProgressComponent,
     HeightBarchartComponent,
     ImmunizationComponent,
-    ImmuneTableComponent
+    ImmuneTableComponent,
+    NotesComponent,
+    NotesTableComponent
   ],
 
   imports: [

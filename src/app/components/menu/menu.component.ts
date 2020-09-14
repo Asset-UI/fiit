@@ -73,7 +73,13 @@ export class MenuComponent implements OnInit {
                     routerLinkActiveOptions: { exact: true }
                 },
                 { label: 'Medical Results', icon: 'pi pi-fw pi-seven' },
-                { label: 'Notes', icon: 'pi pi-fw pi-eight' }
+                { 
+                    label: 'Notes', 
+                    icon: 'pi pi-fw pi-eight',
+                    url: '/notes',
+                    routerLink: ['/notes'],
+                    routerLinkActiveOptions: { exact: true }
+                }
             ]
         }];
     }
