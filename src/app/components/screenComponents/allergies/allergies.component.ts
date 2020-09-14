@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { VitalsComponent } from '../vitals/vitals.component';
 import { BloodPressureLinechartComponent } from '../../chartComponents/blood-pressure-linechart/blood-pressure-linechart.component';
 
 @Component({
@@ -10,65 +9,83 @@ import { BloodPressureLinechartComponent } from '../../chartComponents/blood-pre
 export class AllergiesComponent implements OnInit {
 
   constructor() {
-    BloodPressureLinechartComponent.options = {
-      reverse : true,
-      legend: {
-          lineWidth: 100,
-          fontColor: '#fff',
-          textDirection: 'rtl',
-          scaleShowGridLines : false,
-          borderDash : [5],
-          rtl : true,
-          reverse : true,
-          DrawOnChartArea: false,
-          display: false,
-          tooltips: {
-            rtl: true 
-          } 
-      },
-      labels: {
-        fontColor: 'rgb(255, 99, 132)'
-      },
-      scales: {
-          xAxes: [{
-            display: true,
-            Color: '#fff',
-            rtl : true,
-            fontColor: '#fff',
-            textDirection: 'rtl',
-            ticks: {
-              fontColor: '#064862'
-            },
-            gridLines: {
-              display: false
-          }
-        }],
-        yAxes: [{
-          id: 'left-y-axis',
-          type: 'linear',
-          position: 'left',
-          display: false
-      }, {
-          id: 'right-y-axis',
-          type: 'linear',
-          position: 'right',
-            stacked: true,
-            display: true,
-            rtl : true,
-            reverse : true,
-            fontColor: '#fff',
-            textDirection: 'rtl',
-            ticks: {
-              fontColor: '#064862'
-            },
-            gridLines: {
-                display: false
-            }
-        }]
-      }   
-  };
-   }
-
+    // BloodPressureLinechartComponent.options.scales.xAxes[0] = {}
+    // function updateScales(
+    //   chart:
+    //   {
+    //     scales: {
+    //       [x: string]: any;
+    //     };
+    //     options: {
+    //       scales: {
+    //         xAxes: {
+    //           id: string;
+    //           ticks: {
+    //             fontColor: string;
+    //           };
+    //           display: boolean;
+    //         }[];
+    //         yAxes: {
+    //           display: boolean;
+    //           ticks: {
+    //             fontColor: string;
+    //           };
+    //           type: string;
+    //         }[];
+    //       };
+    //     };
+    //     update: () => void; }) {
+    //   var xScale = chart.scales['x-axis-0'];
+    //   var yScale = chart.scales['y-axis-0'];
+    //   chart.options.scales = {
+    //       xAxes: [{
+    //         id: 'newId',
+    //         ticks: {
+    //           fontColor: '#000'
+    //           },
+    //         display: true
+    //       }],
+    //       yAxes: [{
+    //         display: true,
+    //         ticks: {
+    //           fontColor: '#000'
+    //         },
+    //         type: 'logarithmic'
+    //       }]
+    //   };
+    //   chart.update();
+    //   // need to update the reference
+    //   xScale = chart.scales['newId'];
+    //   yScale = chart.scales['y-axis-0'];
+    // }
+  }
+  // function updateConfigByMutating(chart : any) {
+  //   this.chart = {
+  //     options: {
+  //       title: {
+  //         text: 'new title'
+  //       }
+  //     },
+  //     update: (chart)
+  //   }
+  // };
+  // function updateConfigAsNewObject(chart: any) {
+  //   this.chart = {
+  //     scales: {
+  //       xAxes: {
+  //         ticks: {
+  //           fontColor: '#000'
+  //         }
+  //        },
+  //       yAxes: {
+  //         ticks: {
+  //           fontColor: '#000'
+  //         }
+  //       }
+  //     },
+  //     update: (chart)
+  //   }
+  // }
   ngOnInit(): void {
   }
 

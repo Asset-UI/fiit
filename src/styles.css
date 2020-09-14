@@ -65,13 +65,11 @@ background: #F9FAFC 0% 0% no-repeat padding-box;
     width: 15%;
     overflow: hidden;
     border-radius: 0px 42px 0 0px;
-    background: transparent linear-gradient(212deg, var(--unnamed-color-080647) 0%, #086078 100%) 0% 0% no-repeat padding-box;
-    background: transparent linear-gradient(212deg, #080647 0%, #086078 100%) 0% 0% no-repeat padding-box;
     opacity: 1;
     position: relative;
 }
 .ContentContainer {
-    width: auto;
+    width: 85%;
     padding: 0 35px;
     position: relative;
     height: 100%;
@@ -86,7 +84,7 @@ background: #F9FAFC 0% 0% no-repeat padding-box;
     height: 100%;
 }
 .FiltersComponent {
-    background: #f9fafc00 0% 0% no-repeat padding-box;
+    background: #f9fafc78  0% 0% no-repeat padding-box;
     opacity: 1;
     backdrop-filter: blur(25px);
     -webkit-backdrop-filter: blur(25px);
@@ -112,7 +110,7 @@ background: #F9FAFC 0% 0% no-repeat padding-box;
     color: #000;
     opacity: 1;
     align-items: center;
-    padding: 5px 10px;
+    padding: 5px;
     border: 0 !important;
 }
 p-dropdown:last-child {
@@ -231,13 +229,21 @@ p-card p-header h2 {
     font-weight: normal;
     font-style: normal;
 }
+@font-face {
+    font-family: 'icomoon2';
+    font-display: auto;
+    src: url('../src/assets/icons/fonts/icomoon2.eot');
+    src: url('../src/assets/icons/fonts/icomoon2.eot?#iefix') format('embedded-opentype'), url('../src/assets/icons/fonts/icomoon2.ttf') format('truetype'), url('../src/assets/icons/fonts/icomoon2.woff') format('woff'), url('../src/assets/icons/fonts/icomoon2.svg?#primeicons') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
 p-dropdown:last-child .p-dropdown .pi-chevron-down:before {
     font-size: 9px;
     content: "\e911" !important;
     font-family: 'icomoon1' !important;
     width: 20px;
     display: flex;
-    margin-left: 20px;
+    margin-left: 10px;
 }
 p-dropdown:last-child:before {
     font-size: 27px;
@@ -706,9 +712,6 @@ app-linechart {
 }
 .p-dropdown.p-component.p-dropdown-open .p-dropdown-trigger .pi-chevron-down:before {
     color: #ffff;
-    -webkit-transform: scaleY(-1) !important;
-    transform: scaleY(-1) !important;
-    transition: .5s;
 }
 .p-dropdown.p-component.p-dropdown-open .p-dropdown-trigger {
     -webkit-transform: scaleY(-1) !important;
@@ -811,9 +814,9 @@ p-calendar {
 /* :host ::ng-deep .p-datatable-responsive-demo .p-datatable-tbody > tr > td .p-column-title {
         display: none;
 } */
-.MedsContainer, .ImuneContainer, .AllergiesContainer,.ConditionContainer, .VisitsContainer, .VisitDetailsContainer {
+.MedsContainer, .ImuneContainer, .AllergiesContainer,.ConditionContainer, .VisitsContainer, .VisitDetailsContainer, .NotesContainer {
     position: relative;
-    height: calc(100% - 110px);
+    max-height: calc(100% - 110px);
     margin: 0;
     margin-top: 95px;
     padding: 20px;
@@ -890,7 +893,8 @@ span.ui-button-icon-left.ui-icon.ui-c.pi.pi-search {
     color: #FFFFFF !important;
     opacity: 1;
     border: 0 !important;
-    padding: 15px 25px;
+    padding-top: 25px!important;
+    padding-bottom: 25px!important;
 }
 .p-datatable .p-datatable-thead > tr > th:first-child {
     border-top-left-radius: 5px;
@@ -1048,14 +1052,15 @@ opacity: 1;
 .TitleCustSontainer {
     position: fixed;
     height: fit-content;
-    width: 270px;
+    width: -webkit-fill-available;
     top: 0;
     left: auto;
     background-color: #064862;
     border-radius: 20px 0px 0px 0px;
 }
 .xxx p-dropdown:last-child .p-dropdown-label {
-    max-width: 40px;
+    max-width: 20px;
+    text-overflow: clip;
 }
 span.ArrowAddon:before {
     content: "\e911";
@@ -1284,4 +1289,39 @@ font: normal normal normal 9px/11px RobotoR;
 }
 .exclamation-icon:hover {
     color: #FF4A31;
+     }
+.NotesContainer .ui-inputgroup input {
+    min-width: auto;
+}
+.NotesContainer .p-datatable .p-datatable-tbody > tr {
+    border-bottom: 1px solid rgb(191 191 191 / 0.3);
+}
+.NotesContainer .p-datatable .p-datatable-tbody > tr > td, .p-datatable .p-datatable-thead > tr > th {
+    padding: 30px 25px;
+}
+.NotesContainer .p-datatable .p-datatable-tbody > tr > td:last-child::before {
+    font-size: 15px;
+    content: "\e900" !important;
+    font-family: 'icomoon2' !important;
+    display: initial;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+.NotesContainer .p-datatable .p-datatable-tbody > tr > td:last-child {
+text-align: left;
+font: normal normal 14px/20px RobotoM;
+letter-spacing: 0px;
+color: #064862;
+opacity: 1;
+cursor: pointer;
+}
+.NotesContainer .p-datatable .p-datatable-tbody > tr > td:last-child > a:hover , .NotesContainer .p-datatable .p-datatable-tbody > tr > td:last-child::before> a:hover {
+    color: #FF4A31;
+}
+.NotesContainer .p-datatable .p-datatable-tbody > tr > td:nth-child(3), .NotesContainer .p-datatable .p-datatable-tbody > tr > td:nth-child(4){
+    text-align: left;
+    font: normal normal 14px/20px RobotoM;
+    letter-spacing: -0.2px;
+    color: #4D4F5C;
+    opacity: 1;
 }

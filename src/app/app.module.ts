@@ -31,7 +31,7 @@ import { MedsTableComponent } from './components/tablecomponents/meds-table/meds
 import { TableModule } from 'primeng/table';
 import { HttpClientModule } from '@angular/common/http';
 import { ProductService } from '../assets/productservice';
-import { TooltipModule} from 'primeng/tooltip';
+import { TooltipModule } from 'primeng/tooltip';
 import { AllergiesComponent } from './components/screencomponents/allergies/allergies.component';
 import { AllergiesTableComponent } from './components/tableComponents/allergies-table/allergies-table.component';
 import { CircleProgressComponent } from './components/chartComponents/circle-progress/circle-progress.component';
@@ -43,6 +43,8 @@ import { ConditionsTableComponent } from './components/tableComponents/condition
 import { VisitsComponent } from './components/screenComponents/visits/visits.component';
 import { VisitsTableComponent } from './components/tableComponents/visits-table/visits-table.component';
 import { VisitDetailsComponent } from './components/screenComponents/visits/visit-details/visit-details.component';
+import { NotesComponent } from './components/screenComponents/notes/notes.component';
+import { NotesTableComponent } from './components/tableComponents/notes-table/notes-table.component';
 
 
 
@@ -73,7 +75,9 @@ import { VisitDetailsComponent } from './components/screenComponents/visits/visi
     ConditionsTableComponent,
     VisitsComponent,
     VisitsTableComponent,
-    VisitDetailsComponent
+    VisitDetailsComponent,
+    NotesComponent,
+    NotesTableComponent
   ],
 
   imports: [
@@ -119,6 +123,6 @@ import { VisitDetailsComponent } from './components/screenComponents/visits/visi
   providers: [ProductService],
   bootstrap: [AppComponent],
 })
-export class AppModule { 
-  
+export class AppModule {
+
 }
