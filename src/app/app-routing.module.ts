@@ -8,6 +8,7 @@ import { VitalsComponent } from './components/screencomponents/vitals/vitals.com
 import { AllergiesComponent } from './components/screencomponents/allergies/allergies.component';
 import { MedsComponent } from './components/screencomponents/meds/meds.component';
 import { NotesComponent } from './components/screencomponents/notes/notes.component';
+import { MedicalResultsComponent } from './components/screencomponents/medical-results/medical-results.component';
 
 const routes: Routes = [
   { path: '', component: VitalsComponent, pathMatch: 'full' },
@@ -17,6 +18,7 @@ const routes: Routes = [
   { path: 'conditions', component: ConditionsComponent },
   { path: 'visits', component: VisitsComponent },
   { path: 'visit-details', component: VisitDetailsComponent },
+  { path: 'medical-results', component: MedicalResultsComponent },
   { path: 'notes', component: NotesComponent },
   { path: '**', redirectTo: '' }
   // { path: '**', redirectTo: '' }

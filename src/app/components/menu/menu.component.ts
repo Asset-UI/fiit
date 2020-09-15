@@ -44,53 +44,41 @@ export class MenuComponent implements OnInit {
                     icon: 'pi pi-fw pi-one',
                     styleClass: 'active',
                     url: '/vitals',
-                    routerLink: ['/vitals'],
-                    routerLinkActiveOptions: { exact: true }
                 },
                 {
                     label: 'Conditions',
                     icon: 'pi pi-fw pi-two',
                     styleClass: '',
                     url: '/conditions',
-                    routerLink: ['/conditions'],
-                    routerLinkActiveOptions: { exact: true }
                 },
                 {
                     label: 'Visits',
                     icon: 'pi pi-fw pi-three',
                     styleClass: '',
-                    url: '/visits',
-                    routerLink: ['/visits'],
-                    routerLinkActiveOptions: { exact: true }
+                    url: '/visits'
                 },
                 {
                     label: 'Meds',
                     icon: 'pi pi-fw pi-four',
                     styleClass: '',
-                    url: '/meds',
-                    routerLink: ['/meds'],
-                    routerLinkActiveOptions: { exact: true }
+                    url: '/meds'
                 },
                 {
                     label: 'Allergies',
                     icon: 'pi pi-fw pi-two',
                     styleClass: '',
-                    url: '/allergies',
-                    routerLink: ['/allergies'],
-                    routerLinkActiveOptions: { exact: true }
+                    url: '/allergies'
                 },
                 {
-                    label: 'Immunization', icon: 'pi pi-fw pi-six', url: '/immunization',
-                    routerLink: ['/immunization'],
-                    routerLinkActiveOptions: { exact: true }
+                    label: 'Immunization',
+                    icon: 'pi pi-fw pi-six',
+                    url: '/immunization'
                 },
-                { label: 'Medical Results', icon: 'pi pi-fw pi-seven' },
+                { label: 'Medical Results', icon: 'pi pi-fw pi-seven', url: '/medical-results' },
                 { 
                     label: 'Notes', 
                     icon: 'pi pi-fw pi-eight',
-                    url: '/notes',
-                    routerLink: ['/notes'],
-                    routerLinkActiveOptions: { exact: true }
+                    url: '/notes'
                 }
             ]
         }];

@@ -45,6 +45,7 @@ import { VisitsTableComponent } from './components/tableComponents/visits-table/
 import { VisitDetailsComponent } from './components/screenComponents/visits/visit-details/visit-details.component';
 import { NotesComponent } from './components/screenComponents/notes/notes.component';
 import { NotesTableComponent } from './components/tableComponents/notes-table/notes-table.component';
+import { MedicalResultsComponent } from './components/screenComponents/medical-results/medical-results.component';
 
 
 
@@ -77,7 +78,8 @@ import { NotesTableComponent } from './components/tableComponents/notes-table/no
     VisitsTableComponent,
     VisitDetailsComponent,
     NotesComponent,
-    NotesTableComponent
+    NotesTableComponent,
+    MedicalResultsComponent
   ],
 
   imports: [

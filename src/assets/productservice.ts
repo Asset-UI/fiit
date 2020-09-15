@@ -57,12 +57,12 @@ export class ProductService {
         .then(data => { return data; });
     }
 
-    getProductsWithOrdersSmall() {
-        return this.http.get<any>('assets/showcase/data/products-orders-small.json')
-        .toPromise()
-        .then(res => <Product[]>res.data)
-        .then(data => { return data; });
-    }
+    // getProductsWithOrdersSmall() {
+    //     return this.http.get<any>('assets/showcase/data/products-orders-small.json')
+    //     .toPromise()
+    //     .then(res => <Product[]>res.data)
+    //     .then(data => { return data; });
+    // }
 
     generatePrduct(): Product {
         const product: Product =  {
