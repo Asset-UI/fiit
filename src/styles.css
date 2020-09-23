@@ -814,7 +814,7 @@ p-calendar {
 /* :host ::ng-deep .p-datatable-responsive-demo .p-datatable-tbody > tr > td .p-column-title {
         display: none;
 } */
-.MedsContainer, .ImuneContainer, .AllergiesContainer,.ConditionContainer, .VisitsContainer, .VisitDetailsContainer, .NotesContainer {
+.MedsContainer, .ImuneContainer, .AllergiesContainer,.ConditionContainer, .VisitsContainer, .NotesContainer {
     position: relative;
     max-height: calc(100% - 110px);
     margin: 0;
@@ -824,6 +824,20 @@ p-calendar {
     background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
     background: #FFFFFF 0% 0% no-repeat padding-box;
     box-shadow: 0px 10px 30px #7088D21A;
+    border-radius: 10px;
+    opacity: 1;
+    width: 100%;
+    overflow: hidden;
+}
+.VisitDetailsContainer {
+    position: relative;
+    max-height: calc(100% - 110px);
+    margin: 0;
+    margin-top: 74px;
+    padding: 20px;
+    padding-left: 0px;
+    background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
+    background: transparent 0% 0% no-repeat padding-box;
     border-radius: 10px;
     opacity: 1;
     width: 100%;
@@ -1324,4 +1338,93 @@ cursor: pointer;
     letter-spacing: -0.2px;
     color: #4D4F5C;
     opacity: 1;
+}
+
+/* COMMON */
+.heading-10 {
+    font-size: 10px;
+}
+.heading-12{
+    font-size: 12px;
+}
+.heading-13{
+    font-size: 13px;
+}
+.heading-14 {
+    font-size: 14px;
+}
+.heading-16 {
+    font-size: 16px;
+}
+.heading-18 {
+    font-size: 18px;
+}
+.heading-20 {
+    font-size: 20px;
+}
+.heading-28{
+    font-size: 28px;
+}
+
+.color-light-blue {
+    color: #1EB5FC;
+}
+.color-black {
+    color: black;
+}
+.color-white {
+    color: white;
+}
+.color-light-white {
+    color: #ffffff5c;
+}
+.color-orange {
+    color: #FF4A31;
+}
+.color-dark-blue {
+    color:#064862
+}
+
+.background-dark-blue {
+    background-color: #08295A !important;
+}
+.background-orange {
+    background-color: #FF4A31 !important;
+}
+
+.border-bottom-1 {
+    border-bottom: 1px solid rgb(0 0 0 / 8%);
+}
+.border-bottom-white {
+    border-bottom: 1px solid #ffffff24
+}
+.roboto-regular {
+    font-family: 'RobotoR';
+}
+.roboto-bold {
+    font-family: 'RobotoB';
+}
+.roboto-medium {
+    font-family: 'RobotoM';
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+.p-inputswitch.p-focus .p-inputswitch-slider {
+    box-shadow: none;
+}
+.p-inputswitch.p-inputswitch-checked .p-inputswitch-slider {
+    background-color: #1EB5FC;
+}
+.p-inputswitch .p-inputswitch-slider {
+
+}
+
+.p-inputswitch .p-inputswitch-slider:before {
+    width: 18px;
+    height: 18px;
+}
+.p-inputswitch {
+    vertical-align: bottom;
 }

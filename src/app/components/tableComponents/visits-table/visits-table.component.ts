@@ -1,3 +1,4 @@
+import { Router } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
 import { Product } from '../../../../assets/product';
 import { ProductService } from '../../../../assets/productservice';
@@ -11,7 +12,11 @@ export class VisitsTableComponent implements OnInit {
   dialogVisible: boolean;
   scrollableCols: any[];
   frozenValue: any[];
-  constructor(private productService: ProductService) { }
+  constructor(private productService: ProductService, private route: Router) { }
+
+  visitDetails() {
+    this.route.navigateByUrl('visit-details')
+  }
 
   ngOnInit(): void {
     this.productService.getProductsSmall().then(data => this.products = data);

@@ -1,0 +1,133 @@
+.menu-container {
+    position: fixed;
+    max-height: calc(100% - 110px);
+    margin: 0;
+    padding: 20px;
+    padding-bottom: 0px;
+    background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 5px 15px #7088D217;
+    border-radius: 31px;
+    opacity: 1;
+    width: 77vw;
+    overflow: hidden;
+    z-index: 8;
+}
+
+.menu-container ul {
+    display: inline-flex;
+    margin-bottom: 0rem;
+    padding: 0px;
+}
+.menu-container ul li {
+    list-style: none;
+    margin: 0 30px ;
+    cursor: pointer;
+    font-size: 14px;
+    padding-bottom: 18px;
+    font-family: RobotoM;
+    color: rgb(0 0 0 / 25%)
+}
+.menu-container ul li.active { 
+    color: #FF4A31;
+    border-bottom: 2px solid #FF4A31;
+}
+
+.general-card {
+    padding: 20px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 10px 30px #7088D21A;
+    border-radius: 15px;
+    opacity: 1;
+    max-height: 377px;
+    overflow: auto;
+}
+
+.scrollable-card {
+    height: auto;
+    overflow-y: auto;
+    min-height: 330px;
+    max-height: 330px;
+}
+.scrollable-inside-card {
+    height: 300px;
+    overflow-y: auto;
+    min-height: 300px;
+    max-height: 300px;
+}
+
+.heigh-66 {
+    height: 66vh;
+}
+.max-height {
+    max-height: 432px;
+    overflow-y: auto;
+}
+
+::-webkit-scrollbar {
+    width: 4px;
+    height: 20px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #1EB5FC; 
+    border-radius: 10px;
+    width: 4px;
+    height:20px
+  }
+
+.background-dark-blue   ::-webkit-scrollbar-thumb {
+    background: #FF4A31; 
+    border-radius: 10px;
+    width: 4px;
+    height:20px
+  }
+  .colored-box {
+    padding: 15px 25px;
+    border-radius: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.item-menu {
+    width: 205px;
+    padding: 15px 10px;
+    margin: 15px;
+    display: inline-block;
+    background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
+    background: rgba(255, 255, 255, 0.452) 0% 0% no-repeat padding-box;
+    border: 1px solid rgba(30, 182, 252, 0.068);
+    border-radius: 10px;
+    opacity: 1;
+    color: rgba(30, 182, 252, 0.253);
+}
+.item-menu span {
+    color: rgba(30, 182, 252, 0.253);
+}
+.icon-container {
+    background-color: #1eb6fc11;
+    border-radius: 55px;
+    padding: 6px 3px;
+}
+
+
+.item-menu.active {
+    width: 205px;
+    padding: 15px 10px;
+    margin: 15px;
+    display: inline-block;
+    background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #1EB5FC4D;
+    border-radius: 10px;
+    opacity: 1;
+
+}
+.item-menu.active .icon-container {
+    background-color: #1EB5FC;
+    border-radius: 55px;
+    padding: 6px 3px;
+}
+.item-menu.active span {
+    color: #064862;
+}

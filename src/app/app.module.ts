@@ -43,8 +43,11 @@ import { ConditionsTableComponent } from './components/tableComponents/condition
 import { VisitsComponent } from './components/screenComponents/visits/visits.component';
 import { VisitsTableComponent } from './components/tableComponents/visits-table/visits-table.component';
 import { VisitDetailsComponent } from './components/screenComponents/visits/visit-details/visit-details.component';
-import { NotesComponent } from './components/screenComponents/notes/notes.component';
 import { NotesTableComponent } from './components/tableComponents/notes-table/notes-table.component';
+import { ReportsOrdersComponent } from './components/screenComponents/visits/reports-orders/reports-orders.component';
+import { VisitsResultsTableComponent } from './components/tableComponents/visits-results-table/visits-results-table.component';
+import { LoginComponent } from './components/screenComponents/login/login.component';
+import { InputSwitchModule } from 'primeng/inputswitch';
 
 
 
@@ -76,8 +79,12 @@ import { NotesTableComponent } from './components/tableComponents/notes-table/no
     VisitsComponent,
     VisitsTableComponent,
     VisitDetailsComponent,
-    NotesComponent,
-    NotesTableComponent
+    NotesTableComponent,
+    ReportsOrdersComponent,
+    VisitsResultsTableComponent,
+    LoginComponent,
+
+
   ],
 
   imports: [
@@ -94,6 +101,7 @@ import { NotesTableComponent } from './components/tableComponents/notes-table/no
     MenuModule,
     CardModule,
     MenubarModule,
+    InputSwitchModule,
     NgCircleProgressModule.forRoot({
       // set defaults here
       radius: 60,

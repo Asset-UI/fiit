@@ -1,0 +1,23 @@
+.reports-card {
+    padding: 20px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 10px 30px #7088D21A;
+    border-radius: 15px;
+    opacity: 1;
+    overflow: hidden;
+}
+::-webkit-scrollbar {
+    width: 4px;
+    height: 20px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #1EB5FC; 
+    border-radius: 10px;
+    width: 4px;
+    height:20px
+  }
+  .height-350 {
+    max-height: 350px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}

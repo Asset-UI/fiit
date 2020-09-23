@@ -7,7 +7,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { VitalsComponent } from './components/screencomponents/vitals/vitals.component';
 import { AllergiesComponent } from './components/screencomponents/allergies/allergies.component';
 import { MedsComponent } from './components/screencomponents/meds/meds.component';
-import { NotesComponent } from './components/screencomponents/notes/notes.component';
+
 
 const routes: Routes = [
   { path: '', component: VitalsComponent, pathMatch: 'full' },
@@ -17,7 +17,6 @@ const routes: Routes = [
   { path: 'conditions', component: ConditionsComponent },
   { path: 'visits', component: VisitsComponent },
   { path: 'visit-details', component: VisitDetailsComponent },
-  { path: 'notes', component: NotesComponent },
   { path: '**', redirectTo: '' }
   // { path: '**', redirectTo: '' }
 ];
