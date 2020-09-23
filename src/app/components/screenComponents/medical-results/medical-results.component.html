@@ -1,11 +1,83 @@
-<p-tabView>
-    <p-tabPanel header="Header 1">
-       Content 1
+<div #myLabel class="ResultsContainer CustView">
+    <div class="PageHeader">
+    <span class="Title">Medical Results</span>
+</div>
+<p-tabView (click)="showOrHideManually()">
+    <p-tabPanel>
+        <ng-template pTemplate="header">
+            <span>Labs</span>
+            <span>22</span>
+            <span>Available Results</span>
+            <div class="Indic">
+                <div class="d-flex">
+                    <div>
+                        <p>02</p>
+                        <p>Haematology</p>
+                    </div>
+                    <div>
+                        <p>05</p>
+                        <p>Coagulation</p>
+                    </div>
+                    <div>
+                        <p>03</p>
+                        <p>Chemistry</p>
+                    </div>
+                </div>
+                <div class="d-flex">
+                    <div>
+                        <p>08</p>
+                        <p>Lipid Profile</p>
+                    </div>
+                    <div>
+                        <p>04</p>
+                        <p>CSF Studies</p>
+                    </div>
+                </div>
+            </div>
+        </ng-template>
+        <div class="TabContainer">
+            <div class="Filters">
+                <p-dropdown [options]="FilterTabOne" [(ngModel)]="selectedTabFilterOne" optionLabel="name"></p-dropdown>
+                <p-dropdown [options]="FilterTabTwo" [(ngModel)]="selectedTabFilterTwo" optionLabel="name"></p-dropdown>
+            </div>
+            <div class="NthSelected">
+                <img id="NthSelected" src="../../../../assets/images/Lab.svg">
+                <p>Please Select Laboratory Type</p>
+                <p>And choose Specific Test to show results</p>
+            </div>
+        </div>
+        </p-tabPanel>
+    <p-tabPanel>
+        <ng-template pTemplate="header">
+            <span>Cardiology</span>
+            <span>03</span>
+            <span>Available Results</span>
+        </ng-template>
+        <app-cardiology-table></app-cardiology-table>
     </p-tabPanel>
-    <p-tabPanel header="Header 2" [selected]="true">
-        Content 2
-    </p-tabPanel>
-    <p-tabPanel header="Header 3">
+    <p-tabPanel>
+        <ng-template pTemplate="header">
+            <span>Pathology</span>
+            <span>05</span>
+            <span>Available Results</span>
+        </ng-template>
         Content 3
     </p-tabPanel>
+    <p-tabPanel>
+        <ng-template pTemplate="header">
+            <span>Radiology</span>
+            <span>12</span>
+            <span>Available Results</span>
+        </ng-template>
+        Content 4
+    </p-tabPanel>
+    <p-tabPanel>
+        <ng-template pTemplate="header">
+            <span>Microbiology</span>
+            <span>00</span>
+            <span>Available Results</span>
+        </ng-template>
+        Content 5
+    </p-tabPanel>
 </p-tabView>
+</div>

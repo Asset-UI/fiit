@@ -43,9 +43,12 @@ import { ConditionsTableComponent } from './components/tableComponents/condition
 import { VisitsComponent } from './components/screenComponents/visits/visits.component';
 import { VisitsTableComponent } from './components/tableComponents/visits-table/visits-table.component';
 import { VisitDetailsComponent } from './components/screenComponents/visits/visit-details/visit-details.component';
-import { NotesComponent } from './components/screenComponents/notes/notes.component';
 import { NotesTableComponent } from './components/tableComponents/notes-table/notes-table.component';
-import { MedicalResultsComponent } from './components/screenComponents/medical-results/medical-results.component';
+import { MedicalResultsComponent } from './components/screencomponents/medical-results/medical-results.component';
+import { NotesComponent } from './components/screencomponents/notes/notes.component';
+import { CardiologyTableComponent } from './components/tableComponents/cardiology-table/cardiology-table.component';
+// import { HomeComponent } from './components/screenComponents/home/home.component';
+// import { HomeComponent } from './components/screenComponents/home/home.component';
 
 
 
@@ -77,9 +80,12 @@ import { MedicalResultsComponent } from './components/screenComponents/medical-r
     VisitsComponent,
     VisitsTableComponent,
     VisitDetailsComponent,
-    NotesComponent,
     NotesTableComponent,
-    MedicalResultsComponent
+    MedicalResultsComponent,
+    NotesComponent,
+    CardiologyTableComponent,
+    // HomeComponent,
+    // HomeComponent,
   ],
 
   imports: [

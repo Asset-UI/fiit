@@ -9,6 +9,7 @@ import { AllergiesComponent } from './components/screencomponents/allergies/alle
 import { MedsComponent } from './components/screencomponents/meds/meds.component';
 import { NotesComponent } from './components/screencomponents/notes/notes.component';
 import { MedicalResultsComponent } from './components/screencomponents/medical-results/medical-results.component';
+// import { HomeComponent } from './components/screencomponents/home/home.component';
 
 const routes: Routes = [
   { path: '', component: VitalsComponent, pathMatch: 'full' },
@@ -16,29 +17,11 @@ const routes: Routes = [
   { path: 'meds', component: MedsComponent },
   { path: 'immunization', component: ImmunizationComponent },
   { path: 'conditions', component: ConditionsComponent },
-  { path: 'visits', component: VisitsComponent },
-  { path: 'visit-details', component: VisitDetailsComponent },
   { path: 'medical-results', component: MedicalResultsComponent },
   { path: 'notes', component: NotesComponent },
+  // { path: 'home', component: HomeComponent },
   { path: '**', redirectTo: '' }
-  // { path: '**', redirectTo: '' }
 ];
-// export const routes: Routes = [
-//   { 
-//     path: 'linechart', 
-//     component: LinechartComponent
-//    },
-//   {
-//     path: 'hello',
-//     component: HelloworldComponent,
-//     children: []
-//   }
-// ];
-
-// export const APP_ROUTER_PROVIDERS = [
-//   RouterModule.forRoot(routes)
-// ];
-
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
