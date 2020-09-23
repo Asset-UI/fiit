@@ -49,6 +49,10 @@ import { NotesComponent } from './components/screencomponents/notes/notes.compon
 import { CardiologyTableComponent } from './components/tableComponents/cardiology-table/cardiology-table.component';
 // import { HomeComponent } from './components/screenComponents/home/home.component';
 // import { HomeComponent } from './components/screenComponents/home/home.component';
+import { ReportsOrdersComponent } from './components/screenComponents/visits/reports-orders/reports-orders.component';
+import { VisitsResultsTableComponent } from './components/tableComponents/visits-results-table/visits-results-table.component';
+import { LoginComponent } from './components/screenComponents/login/login.component';
+import { InputSwitchModule } from 'primeng/inputswitch';
 
 
 
@@ -86,6 +90,11 @@ import { CardiologyTableComponent } from './components/tableComponents/cardiolog
     CardiologyTableComponent,
     // HomeComponent,
     // HomeComponent,
+    ReportsOrdersComponent,
+    VisitsResultsTableComponent,
+    LoginComponent,
+
+
   ],
 
   imports: [
@@ -102,6 +111,7 @@ import { CardiologyTableComponent } from './components/tableComponents/cardiolog
     MenuModule,
     CardModule,
     MenubarModule,
+    InputSwitchModule,
     NgCircleProgressModule.forRoot({
       // set defaults here
       radius: 60,

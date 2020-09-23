@@ -7,7 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class VisitDetailsComponent implements OnInit {
 
+  tab = 'general'
+
   constructor() { }
+
+  tabVeiw(tabName) {
+    this.tab = tabName
+  }
 
   ngOnInit(): void {
   }

@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1366" height="800" viewBox="0 0 1366 800">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_833" data-name="Rectangle 833" width="1366" height="800" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+    <linearGradient id="linear-gradient" x1="0.553" y1="0.639" x2="-0.676" y2="0.949" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#080647"/>
+      <stop offset="1" stop-color="#086078"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#064862"/>
+      <stop offset="1" stop-color="#010e14"/>
+    </linearGradient>
+  </defs>
+  <g id="Admin_BG" data-name="Admin BG" clip-path="url(#clip-path)">
+    <g id="Group_2811" data-name="Group 2811">
+      <path id="Path_2238" data-name="Path 2238" d="M1907,0C2960.207,0,3814,646.5,3814,1444S2960.207,2888,1907,2888,0,2241.5,0,1444,853.793,0,1907,0Z" transform="translate(-1673 -1646)" fill="url(#linear-gradient)"/>
+      <ellipse id="Ellipse_220" data-name="Ellipse 220" cx="1907" cy="1444" rx="1907" ry="1444" transform="translate(-375 42)" opacity="0.21" fill="url(#linear-gradient-2)"/>
+      <ellipse id="Ellipse_221" data-name="Ellipse 221" cx="1642.5" cy="1243.5" rx="1642.5" ry="1243.5" transform="translate(-1888 541)" fill="#ff4a31"/>
+      <path id="Path_2433" data-name="Path 2433" d="M2034.5,9C3158.123,9,4069,571.394,4069,1276.245S3158.123,2552.49,2034.5,2552.49,0,1981.1,0,1276.245,910.877,9,2034.5,9Z" transform="translate(-2145 619.604)" fill="#1eb5fc"/>
+    </g>
+  </g>
+</svg>
