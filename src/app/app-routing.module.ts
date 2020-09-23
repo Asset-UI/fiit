@@ -7,7 +7,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { VitalsComponent } from './components/screencomponents/vitals/vitals.component';
 import { AllergiesComponent } from './components/screencomponents/allergies/allergies.component';
 import { MedsComponent } from './components/screencomponents/meds/meds.component';
-import { NotesComponent } from './components/screencomponents/notes/notes.component';
+// import { NotesComponent } from './components/screencomponents/notes/notes.component';
 import { MedicalResultsComponent } from './components/screencomponents/medical-results/medical-results.component';
 // import { HomeComponent } from './components/screencomponents/home/home.component';
 
@@ -19,7 +19,7 @@ const routes: Routes = [
   { path: 'immunization', component: ImmunizationComponent },
   { path: 'conditions', component: ConditionsComponent },
   { path: 'medical-results', component: MedicalResultsComponent },
-  { path: 'notes', component: NotesComponent },
+  // { path: 'notes', component: NotesComponent },
   // { path: 'home', component: HomeComponent },
   { path: 'visits', component: VisitsComponent },
   { path: 'visit-details', component: VisitDetailsComponent },

@@ -1,6 +1,10 @@
 .login-container {
     height: 100vh;
+    max-height: 100vh;
     background-image: url(../../../../assets/images/Admin-BG.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
 }
 
 .login-form {
