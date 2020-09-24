@@ -45,7 +45,7 @@ import { VisitsTableComponent } from './components/tableComponents/visits-table/
 import { VisitDetailsComponent } from './components/screenComponents/visits/visit-details/visit-details.component';
 import { NotesTableComponent } from './components/tableComponents/notes-table/notes-table.component';
 import { MedicalResultsComponent } from './components/screencomponents/medical-results/medical-results.component';
-// import { NotesComponent } from './components/screencomponents/notes/notes.component';
+import { NotesComponent } from './components/screencomponents/notes/notes.component';
 import { CardiologyTableComponent } from './components/tableComponents/cardiology-table/cardiology-table.component';
 // import { HomeComponent } from './components/screenComponents/home/home.component';
 // import { HomeComponent } from './components/screenComponents/home/home.component';
@@ -86,15 +86,13 @@ import { InputSwitchModule } from 'primeng/inputswitch';
     VisitDetailsComponent,
     NotesTableComponent,
     MedicalResultsComponent,
-    // NotesComponent,
+    NotesComponent,
     CardiologyTableComponent,
     // HomeComponent,
     // HomeComponent,
     ReportsOrdersComponent,
     VisitsResultsTableComponent,
     LoginComponent,
-
-
   ],
 
   imports: [
