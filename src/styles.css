@@ -317,38 +317,7 @@ img#logo {
     width: auto;
     height: auto;
 }
-.p-menu .p-menuitem-link:focus {
-    outline: none;
-    outline-offset: 0;
-    box-shadow: none;
-    border: 0 !important;
-}
-.p-menu .p-menuitem-link:not(.p-disabled):hover {
-    background: none;
-    /* border-left: 2px solid red;
-    background-color: red; */
-}
-.p-menu .p-menuitem-link:not(.p-disabled):hover > .p-menuitem-text, .p-menu .p-menuitem-link:not(.p-disabled):hover > .p-menuitem-icon {
-    color: #fff;
-    opacity: 1;
-}
-.p-menu .p-menuitem-link .p-menuitem-text, .p-menu .p-menuitem-link .p-menuitem-icon {
-    color: #94B2E6;
-    opacity: .5;
-}
-.p-menu .p-menuitem-link .p-menuitem-icon::before {
-    font-size: 25px;
-    /* font: icon; */
-}
-.p-menu .p-menuitem-link .p-menuitem-text {
-    font-size: 13px;
-    font-family: MontserratR;
-}
-.p-menu .p-menuitem-link .p-menuitem-icon {
-    font-size: 25px;
-    /* font: icon;
-    width: 25px; */
-}
+
 p-dropdownitem:first-child{
     display: none;
 }
@@ -921,8 +890,6 @@ span.ui-button-icon-left.ui-icon.ui-c.pi.pi-search {
     color: #FFFFFF !important;
     opacity: 1;
     border: 0 !important;
-    padding-top: 25px!important;
-    padding-bottom: 25px!important;
 }
 .p-datatable .p-datatable-thead > tr > th:first-child {
     border-top-left-radius: 5px;
@@ -975,6 +942,11 @@ span.ArrowAddon {
     background: #064862 0% 0% no-repeat padding-box;
     border-radius: 11px 0px 0px 11px;
     opacity: 1;
+    display: none;
+}
+app-allergies + span,
+app-meds + span{
+    display: block !important;
 }
 .MainContainer.xxx .ContentContainer {
     max-width: 65%;
@@ -1064,16 +1036,8 @@ opacity: 1;
     height: 45px;
     width: -webkit-fill-available;
 }
-.p-menuitem.active {
-    border-left: 2px solid #FF4A31 !important;
-    transition: 1s !important;
-    animation-direction: normal !important;
-    border-left-style: groove !important;
-}
-.p-menuitem.active .p-menuitem-link .p-menuitem-text, .p-menuitem.active .p-menuitem-link .p-menuitem-icon {
-    color: #FF4A31 !important;
-    opacity: 1;
-}
+
+
 .RightMenu h2.Title:before {
     content: none !important;
 }
@@ -1328,7 +1292,7 @@ font: normal normal normal 9px/11px RobotoR;
     border-bottom: 1px solid rgb(191 191 191 / 0.3);
 }
 .NotesContainer .p-datatable .p-datatable-tbody > tr > td, .p-datatable .p-datatable-thead > tr > th {
-    padding: 30px 25px;
+    padding: 15px;
 }
 .NotesContainer .p-datatable .p-datatable-tbody > tr > td:last-child::before, .ResultsContainer .p-datatable .p-datatable-tbody > tr > td:last-child::before {
     font-size: 15px;
@@ -1715,9 +1679,7 @@ img#NthSelected {
 .ResultsContainer  .p-dropdown{
     min-width: 260px;
 }
-.ResultsContainer .p-dropdown-panel .p-dropdown-items .p-dropdown-item.p-highlight{
-    background-color: #fff;
-}
+
 .ResultsContainer .p-datatable .p-datatable-tbody > tr > td:nth-child(2), .ResultsContainer .p-datatable .p-datatable-tbody > tr > td:nth-child(4){
     text-align: left;
     font: normal normal 14px/20px RobotoM;
@@ -1859,14 +1821,52 @@ img#NthSelected {
 .p-inputswitch.p-inputswitch-checked .p-inputswitch-slider {
     background-color: #1EB5FC;
 }
-.p-inputswitch .p-inputswitch-slider {
-
-}
-
 .p-inputswitch .p-inputswitch-slider:before {
     width: 18px;
     height: 18px;
 }
 .p-inputswitch {
     vertical-align: bottom;
+}
+/* ----------------------------------------------SideMenu------------------------------------------------ */
+
+.p-menu .p-menuitem-link:focus {
+    outline: none;
+    outline-offset: 0;
+    box-shadow: none;
+    border: 0 !important;
+}
+.p-menu .p-menuitem-link:not(.p-disabled):hover {
+    background: none;
+}
+.p-menu .p-menuitem-link:not(.p-disabled):hover > .p-menuitem-text, .p-menu .p-menuitem-link:not(.p-disabled):hover > .p-menuitem-icon {
+    color: #fff;
+    opacity: 1;
+}
+.p-menu .p-menuitem-link .p-menuitem-text, .p-menu .p-menuitem-link .p-menuitem-icon {
+    color: #94B2E6;
+    opacity: .5;
+}
+.p-menu .p-menuitem-link .p-menuitem-icon::before {
+    font-size: 25px;
+}
+.p-menu .p-menuitem-link .p-menuitem-text {
+    font-size: 13px;
+    font-family: MontserratR;
+}
+.p-menu .p-menuitem-link .p-menuitem-icon {
+    font-size: 25px;
+}
+.p-menuitem.active {
+    margin: 5px 0; 
+}
+.p-menuitem.active a.p-menuitem-link-active{
+    border-left: 2px solid #FF4A31 !important;
+}
+.p-menuitem-link-active span{
+    color: #FF4A31 !important;
+    opacity: 1 !important;
+}
+.NotesContainer .p-datatable .p-datatable-tbody > tr > td:last-child:hover, .ResultsContainer .p-datatable .p-datatable-tbody > tr > td:last-child:hover{
+    color: #FF4A31;
 }

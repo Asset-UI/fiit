@@ -7,7 +7,6 @@ import { Component } from '@angular/core';
 })
 
 export class AppComponent {
- public hh:boolean = true;;
   public shouldShow:boolean = true;
   title = 'fiit';
 }

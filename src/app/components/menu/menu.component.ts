@@ -13,20 +13,6 @@ export class MenuComponent implements OnInit {
 
     items: MenuItem[];
     toggle: boolean = true;
-
-    activeMenu(event) {
-        let node;
-        if (event.target.tagName === "A") {
-            node = event.target;
-        } else {
-            node = event.target.parentNode;
-        }
-        let menuitem = document.getElementsByClassName("ui-menuitem-link");
-        for (let i = 0; i < menuitem.length; i++) {
-            menuitem[i].classList.remove("active");
-        }
-        node.classList.add("active")
-    }
     constructor(private router: Router) { }
     checkActiveState(givenLink) {
         console.log(this.router.url);
@@ -43,42 +29,72 @@ export class MenuComponent implements OnInit {
                     label: 'Vitals',
                     icon: 'pi pi-fw pi-one',
                     styleClass: 'active',
-                    url: '/vitals',
+                    routerLink: ['/vitals'],
+                    routerLinkActiveOptions: {
+                        exact: true
+                    }
                 },
                 {
                     label: 'Conditions',
                     icon: 'pi pi-fw pi-two',
-                    styleClass: '',
-                    url: '/conditions',
+                    styleClass: 'active',
+                    routerLink: ['/conditions'],
+                    routerLinkActiveOptions: {
+                        exact: true
+                    }
                 },
                 {
                     label: 'Visits',
                     icon: 'pi pi-fw pi-three',
-                    styleClass: '',
-                    url: '/visits'
+                    styleClass: 'active',
+                    routerLink: ['/visits'],
+                    routerLinkActiveOptions: {
+                        exact: true
+                    }
                 },
                 {
                     label: 'Meds',
                     icon: 'pi pi-fw pi-four',
-                    styleClass: '',
-                    url: '/meds'
+                    styleClass: 'active',
+                    routerLink: ['/meds'],
+                    routerLinkActiveOptions: {
+                        exact: true
+                    }
                 },
                 {
                     label: 'Allergies',
                     icon: 'pi pi-fw pi-two',
-                    styleClass: '',
-                    url: '/allergies'
+                    styleClass: 'active',
+                    routerLink: ['/allergies'],
+                    routerLinkActiveOptions: {
+                        exact: true
+                    }
                 },
                 {
                     label: 'Immunization',
                     icon: 'pi pi-fw pi-six',
-                    url: '/immunization'
+                    styleClass: 'active',
+                    routerLink: ['/immunization'],
+                    routerLinkActiveOptions: {
+                        exact: true
+                    }
                 },
-                { label: 'Medical Results', icon: 'pi pi-fw pi-seven', url: '/medical-results' },
-                { 
+                {   label: 'Medical Results',
+                    icon: 'pi pi-fw pi-seven',
+                    styleClass: 'active',
+                    routerLink: ['/medical-results'],
+                    routerLinkActiveOptions: {
+                        exact: true
+                    }
+                },
+                 { 
                     label: 'Notes', 
                     icon: 'pi pi-fw pi-eight',
-                    url: '/notes'
+                    styleClass: 'active',
+                    routerLink: ['/notes'],
+                    routerLinkActiveOptions: {
+                        exact: true
+                    }
                 }
             ]
         }];
