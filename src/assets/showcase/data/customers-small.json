@@ -1,0 +1,108 @@
+{
+    "data": [
+    {
+      "id": 1000,
+      "name": {
+        "name": "Abbott Northwestern",
+        "discription": "Clinic",
+        "image": "Clinic.svg"
+      },
+      "creation_date": "2020-09-13",
+      "contract_date": "2020-12-29",
+      "discription": "Asthma is a condition in which your airways narrow and swell and produce extra mucus. This can make breathing",
+      "status": "Cerner Millennium",
+      "Created_By": "Mohamed_Ahmed"
+    },
+    {
+      "id": 1001,
+      "name": {
+        "name": "Aspirus Hospital Wausau",
+        "discription": "Hospital",
+        "image": "Hospital.svg"
+      },
+      "creation_date": "2020-09-13",
+      "contract_date": "2020-03-13",
+      "discription": "Asthma is a condition in which your airways narrow and swell and produce extra mucus. This can make breathing",
+      "status": "Epic",
+      "Created_By": "Mohamed_Ahmed"
+    },
+    {
+      "id": 1002,
+      "name": {
+        "name": "Baptist Health Lexington",
+        "discription": "Clinic",
+        "image": "Clinic.svg"
+      },
+      "creation_date": "2020-09-13",
+      "contract_date": "2020-03-13",
+      "discription": "Asthma is a condition in which your airways narrow and swell and produce extra mucus. This can make breathing",
+      "status": "Touchworks",
+      "Created_By": "Mohamed_Ahmed"
+    },
+    {
+      "id": 1003,
+      "name": {
+        "name": "Aspirus Hospital Wausau",
+        "discription": "Hospital",
+        "image": "Hospital.svg"
+      },
+      "creation_date": "2020-09-13",
+      "contract_date": "2020-03-13",
+      "discription": "Asthma is a condition in which your airways narrow and swell and produce extra mucus. This can make breathing",
+      "status": "1Up Health",
+      "Created_By": "Mohamed_Ahmed"
+    },
+    {
+      "id": 1004,
+      "name": {
+        "name": "Abbott Northwestern",
+        "discription": "Clinic",
+        "image": "Clinic.svg"
+      },
+      "creation_date": "2020-09-13",
+      "contract_date": "2020-12-29",
+      "discription": "Asthma is a condition in which your airways narrow and swell and produce extra mucus. This can make breathing",
+      "status": "Cerner Millennium",
+      "Created_By": "Mohamed_Ahmed"
+    },
+    {
+      "id": 1005,
+      "name": {
+        "name": "Aspirus Hospital Wausau",
+        "discription": "Clinic",
+        "image": "Clinic.svg"
+      },
+      "creation_date": "2020-09-13",
+      "contract_date": "2020-03-13",
+      "discription": "Asthma is a condition in which your airways narrow and swell and produce extra mucus. This can make breathing",
+      "status": "Epic",
+      "Created_By": "Mohamed_Ahmed"
+    },
+    {
+      "id": 1006,
+      "name": {
+        "name": "Baptist Health Lexington",
+        "discription": "Hospital",
+        "image": "Hospital.svg"
+      },
+      "creation_date": "2020-09-13",
+      "contract_date": "2020-03-13",
+      "discription": "Asthma is a condition in which your airways narrow and swell and produce extra mucus. This can make breathing",
+      "status": "Touchworks",
+      "Created_By": "Mohamed_Ahmed"
+    },
+    {
+      "id": 1007,
+      "name": {
+        "name": "Aspirus Hospital Wausau",
+        "discription": "Hospital",
+        "image": "Hospital.svg"
+      },
+      "creation_date": "2020-09-13",
+      "contract_date": "2020-03-13",
+      "discription": "Asthma is a condition in which your airways narrow and swell and produce extra mucus. This can make breathing",
+      "status": "1Up Health",
+      "Created_By": "Mohamed_Ahmed"
+    }
+  ]
+}

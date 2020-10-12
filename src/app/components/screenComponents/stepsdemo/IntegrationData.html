@@ -1,0 +1,59 @@
+
+        <div class="stepsdemo-content sc">
+            <p-card>
+                <ng-template pTemplate="content">
+                    <div class="p-fluid p-formgrid p-grid">
+                        <div class="p-field p-col-12 mb-0 p-0">
+                            <div class="p-field p-col-6">
+                                <label for="age">Integration Type</label>
+                                <p-dropdown [options]="statuses" (onChange)="dt.filter($event.value, 'status', 'equals')" styleClass="p-column-filter" [showClear]="false">
+                                    <ng-template let-option pTemplate="item">
+                                        <span [class]="'customer-badge status-' + option.value">{{option.label}}</span>
+                                    </ng-template>
+                                </p-dropdown>
+                            </div>
+                        </div>
+                        <div class="p-field p-col-12 mb-0 p-0">
+                            <div class="p-field p-col-6">
+                                <label>1Up ID</label>
+                                <input #providername="ngModel" id="providername" type="text"placeholder="66.294.65.147" pInputText [(ngModel)]="generalInformation.providername" [ngClass]="{'p-invalid': (providername.invalid && submitted) || (providername.dirty && providername.invalid)}"> 
+                                <small *ngIf="(providername.invalid && submitted) || (providername.dirty && providername.invalid)" class="p-error">Provider Name is required.</small>
+                            </div>
+                        </div>
+                        <div class="p-field p-col-12 mb-0 p-0">
+                            <div class="p-field p-col-6">
+                                <label>Url</label>
+                                <input #providername="ngModel" id="providername" type="text"placeholder="Url" pInputText [(ngModel)]="generalInformation.providername" [ngClass]="{'p-invalid': (providername.invalid && submitted) || (providername.dirty && providername.invalid)}"> 
+                                <small *ngIf="(providername.invalid && submitted) || (providername.dirty && providername.invalid)" class="p-error">Provider Name is required.</small>
+                            </div>
+                        </div>
+                        <div class="p-field p-col-6">
+                            <label>App_Name</label>
+                            <input #providername="ngModel" id="providername" type="text"placeholder="Name" pInputText [(ngModel)]="generalInformation.providername" [ngClass]="{'p-invalid': (providername.invalid && submitted) || (providername.dirty && providername.invalid)}"> 
+                            <small *ngIf="(providername.invalid && submitted) || (providername.dirty && providername.invalid)" class="p-error">Provider Name is required.</small>
+                        </div>
+                        <div class="p-field p-col-6">
+                            <label>App_Password</label>
+                            <input #providername="ngModel" id="providername" type="text"placeholder="Password" pInputText [(ngModel)]="generalInformation.providername" [ngClass]="{'p-invalid': (providername.invalid && submitted) || (providername.dirty && providername.invalid)}"> 
+                            <small *ngIf="(providername.invalid && submitted) || (providername.dirty && providername.invalid)" class="p-error">Provider Name is required.</small>
+                        </div>
+                        <div class="p-field p-col-12 mb-0">
+                            <span class="InnerTitle">Other Integration Data</span>
+                            <div class="p-field p-col-12 m-0">
+                                <a class="AddProvider">
+                                    Add Extra Integration Data
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </ng-template>
+                <ng-template pTemplate="footer">
+                    <div class="p-grid p-nogutter p-justify-end">
+                        <p-button class="Confirm" label="Save" (onClick)="complete()"></p-button>
+                    </div>
+                    <div class="p-grid p-nogutter p-justify-end">
+                        <p-button class="Cancel" label="Cancel" (onClick)="cancel()"></p-button>
+                    </div>
+                </ng-template>
+            </p-card>
+        </div>

@@ -8,8 +8,9 @@ import { VitalsComponent } from './components/screencomponents/vitals/vitals.com
 import { AllergiesComponent } from './components/screencomponents/allergies/allergies.component';
 import { MedsComponent } from './components/screencomponents/meds/meds.component';
 import { NotesComponent } from './components/screencomponents/notes/notes.component';
+// import { HomeComponent } from './components/screencomponents/home/home.component';
+// import { ProvidersComponent } from './components/screencomponents/providers/providers.component';
 import { MedicalResultsComponent } from './components/screencomponents/medical-results/medical-results.component';
-
 
 const routes: Routes = [
   { path: 'vitals', component: VitalsComponent, pathMatch: 'full' },
@@ -19,6 +20,9 @@ const routes: Routes = [
   { path: 'conditions', component: ConditionsComponent },
   { path: 'medical-results', component: MedicalResultsComponent },
   { path: 'notes', component: NotesComponent },
+  // { path: 'home', component: HomeComponent },
+  {path: 'steps', loadChildren: () => import('./components/screenComponents/stepsdemo/stepsdemo.module').then(m => m.StepsDemoModule)},
+  // { path: 'providers', component: ProvidersComponent },
   { path: 'visits', component: VisitsComponent },
   { path: 'visit-details', component: VisitDetailsComponent },
   { path: '**', redirectTo: 'vitals' }

@@ -1,0 +1,46 @@
+
+        <div class="stepsdemo-content">
+            <p-card>
+                <ng-template pTemplate="content">
+                    <div class="p-fluid p-formgrid p-grid">
+                        <div class="p-field p-col-12">
+                            <label for="providername">Provider Name</label>
+                            <input #providername="ngModel" id="providername" type="text" required placeholder="Health-Care Provider Name" pInputText [(ngModel)]="generalInformation.providername" [ngClass]="{'p-invalid': (providername.invalid && submitted) || (providername.dirty && providername.invalid)}"> 
+                            <small *ngIf="(providername.invalid && submitted) || (providername.dirty && providername.invalid)" class="p-error">Provider Name is required.</small>
+                        </div>
+                        <div class="p-field p-col-6">
+                            <label for="age">Integration Type</label>
+                            <p-dropdown [options]="statuses" (onChange)="dt.filter($event.value, 'status', 'equals')" styleClass="p-column-filter" placeholder="Select Integration Type" [showClear]="false">
+                                <ng-template let-option pTemplate="item">
+                                    <span [class]="'customer-badge status-' + option.value">{{option.label}}</span>
+                                </ng-template>
+                            </p-dropdown>
+                        </div>
+                        <div class="p-field p-col-6">
+                            <label for="lastname">Provider Type</label>
+                            <p-dropdown [options]="types" (onChange)="dt.filter($event.value, 'name.discription', 'equals')" styleClass="p-column-filter" class="Colored" [showClear]="false">
+                                <ng-template let-option pTemplate="item">
+                                    <span [class]="'customer-badge name.discription-' + option.value">{{option.label}}</span>
+                                </ng-template>
+                            </p-dropdown>
+                        </div>
+                        <div class="p-field p-col-6">
+                            <label for="range">Contract Start Date</label>
+                            <p-calendar class="Colored" [(ngModel)]="rangeDates" selectionMode="range" [readonlyInput]="true" inputId="range" [showIcon]="true" placeholder="Select Starting Date" inputId="icon" [showClear]="true"></p-calendar>
+                        </div>
+                        <div class="p-field p-col-12">
+                            <label for="age">Description</label>
+                            <textarea  pInputText placeholder="Description" [(ngModel)]="generalInformation.age"></textarea>
+                        </div>
+                    </div>
+                </ng-template>
+                <ng-template pTemplate="footer">
+                    <div class="p-grid p-nogutter p-justify-end">
+                        <p-button class="Confirm" label="Save & Continue" (onClick)="nextPage()" icon="pi pi-angle-right" iconPos="right"></p-button>
+                    </div>
+                    <div class="p-grid p-nogutter p-justify-end">
+                        <p-button class="Cancel" label="Cancel" (onClick)="Cancel()"></p-button>
+                    </div>
+                </ng-template>
+            </p-card>
+        </div>

@@ -47,13 +47,17 @@ import { NotesTableComponent } from './components/tableComponents/notes-table/no
 import { MedicalResultsComponent } from './components/screencomponents/medical-results/medical-results.component';
 import { NotesComponent } from './components/screencomponents/notes/notes.component';
 import { CardiologyTableComponent } from './components/tableComponents/cardiology-table/cardiology-table.component';
-// import { HomeComponent } from './components/screenComponents/home/home.component';
-// import { HomeComponent } from './components/screenComponents/home/home.component';
+import { HomeComponent } from './components/screenComponents/home/home.component';
 import { ReportsOrdersComponent } from './components/screenComponents/visits/reports-orders/reports-orders.component';
 import { VisitsResultsTableComponent } from './components/tableComponents/visits-results-table/visits-results-table.component';
 import { LoginComponent } from './components/screenComponents/login/login.component';
 import { InputSwitchModule } from 'primeng/inputswitch';
-
+import { ProvidersComponent } from './components/screenComponents/providers/providers.component';
+import { BackEndTableComponent } from './components/tableComponents/back-end-table/back-end-table.component';
+import { CustomerService } from '../assets/customerservice';
+import { TicketService } from '../assets/ticketservice';
+import { StepsModule } from 'primeng/steps';
+import { StepsDemoModule } from './components/screenComponents/stepsdemo/stepsdemo.module';
 
 
 @NgModule({
@@ -88,11 +92,13 @@ import { InputSwitchModule } from 'primeng/inputswitch';
     MedicalResultsComponent,
     NotesComponent,
     CardiologyTableComponent,
-    // HomeComponent,
-    // HomeComponent,
+    HomeComponent,
     ReportsOrdersComponent,
     VisitsResultsTableComponent,
     LoginComponent,
+    ProvidersComponent,
+    BackEndTableComponent,
+    // StepsComponent
   ],
 
   imports: [
@@ -110,6 +116,7 @@ import { InputSwitchModule } from 'primeng/inputswitch';
     CardModule,
     MenubarModule,
     InputSwitchModule,
+    StepsDemoModule,
     NgCircleProgressModule.forRoot({
       // set defaults here
       radius: 60,
@@ -134,9 +141,10 @@ import { InputSwitchModule } from 'primeng/inputswitch';
     CalendarModule,
     TableModule,
     HttpClientModule,
-    TooltipModule
+    TooltipModule,
+    StepsModule
   ],
-  providers: [ProductService],
+  providers: [ProductService, CustomerService, TicketService],
   bootstrap: [AppComponent],
 })
 export class AppModule {
