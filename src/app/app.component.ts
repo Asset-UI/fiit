@@ -7,6 +7,5 @@ import { Component } from '@angular/core';
 })
 
 export class AppComponent {
-  public shouldShow:boolean = true;
   title = 'fiit';
 }

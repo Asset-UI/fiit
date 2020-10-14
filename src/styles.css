@@ -1739,6 +1739,7 @@ img#NthSelected {
     cursor: pointer;
     background: #FF4A31 0% 0% no-repeat padding-box;
     min-height: 25vh;
+    text-decoration: none;
 }
 .HomeContainer .LinkContainer:first-child span a p {
     color: #fff;
@@ -1986,9 +1987,6 @@ img#NthSelected {
     z-index: 1;
 }
 
-app-providers .BackEndTitle {
-    margin-top: 95px;
-}
 app-providers .PageHeader .ui-inputgroup input{
     background: #fff0;
 }
@@ -2034,6 +2032,8 @@ a.AddProvider {
     align-items: center;
     max-width: max-content;
     cursor: pointer;
+    margin-top: 130px ;
+
 }
 a.AddProvider:hover {
     background: #FF4A31;
@@ -2043,8 +2043,9 @@ a.AddProvider:hover::before {
     color: #FF4A31;
 }
 .ProviderContainer {
-    margin-top: 90px;
+    margin-top: 80px;
     overflow: inherit;
+    padding-bottom: 0;
 }
 app-providers .PageHeader {
     width: calc(100% + 30px);
@@ -2134,7 +2135,7 @@ span.image-text {
     font-family: icomoon4;
     text-align: center;
     margin: auto;
-    font-size: 25px;
+    font-size: 30px;
     top: 0;
     bottom: 0;
     /* left: 24px; */
@@ -2158,9 +2159,9 @@ span.image-text {
 .Hovermenu > ul {
     position: absolute;
     background-color: #fff;
-    left: -180px;
+    left: -200px;
     width: 240px;
-    top: 50px;
+    top: 25px;
     border-radius: 7px;
     padding: 5px 0;
     display: none;
@@ -2177,9 +2178,12 @@ span.image-text {
 }
 .Hovermenu {
     position: relative;
-    width: 100%;
-    height: 100%;
-    display: table-row-group;
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    text-align: center;
+    margin: initial;
+    padding-left: 5px;
 }
 
 .Hovermenu > ul.tableOPT li:nth-child(2):hover{
@@ -2200,7 +2204,7 @@ span.image-text {
     border-top: 1px solid #80808026;
 }
 .ProviderContainer .p-datatable .p-datatable-tbody > tr:nth-last-child(-n+2)  > td > .Hovermenu > ul{
-    top: -80px;
+    top: -130px;
 }
 .ProviderContainer .Hovermenu::after {
     content: "";
@@ -2212,7 +2216,7 @@ span.image-text {
     height: 50px;
 }
 .content-section.implementation {
-    margin-top: 95px;
+    margin-top: 90px;
 }
 .p-steps ul{
     position: relative;
@@ -2433,6 +2437,7 @@ span.InnerTitle {
 .stepsdemo-content a.AddProvider {
     background: #fff;
     color: #1EB5FC;
+    margin: 0;
 }
 .stepsdemo-content a.AddProvider::before {
     color: #fff;
@@ -2449,14 +2454,23 @@ span.InnerTitle {
 .p-grid.p-field.FiltersComponent.BackEnd tr th:first-child {
     display: flex;
 }
-.ViewProvider {
+
+.ViewProvider, .ViewProvider::before {
     position: fixed;
     top: 0;
-    left: 0;
-    width: 100%;
+    right: 0;
+    width: 85%;
     height: 100vh;
     overflow: hidden;
     cursor: pointer;
+    z-index: 99;
+    background-color: #012E4029;
+}
+.ViewProvider::before {
+    content: "";
+    left: 0;
+    right: auto;
+    width: 15%;
 }
 .stepsdemo-content .p-datepicker table th > span {
     width: 0 !important;
@@ -2469,4 +2483,128 @@ span.InnerTitle {
     font-weight: 500;
     margin-right: 10px;
     color: #ff4a31;
+}
+.LangOnly {
+    width: fit-content;
+    margin: auto;
+    margin-right: 0;
+}
+.LangOnly div{
+    background-color: #ff4a31 !important;
+}
+.LangOnly div .p-dropdown-label{
+    color: #fff;
+}
+.LangOnly div .pi-chevron-down:before {
+    font-size: 9px;
+    /* font-weight: 900; */
+    color: #fff;
+    opacity: 1;
+    z-index: 9;
+    content: "\e911" !important;
+    font-family: 'icomoon1' !important;
+    vertical-align: middle;
+    display: block;
+}
+.TabPopUp span.InnerTitle:nth-child(1):before {
+    display: inline-block;
+    content: url(./assets/images/avatar/Clinic.svg);
+    /* background-image: url(./assets/images/avatar/Clinic.svg); */
+    /* background-size: cover; */
+    width: 50px;
+    position: relative;
+    margin: 0;
+}
+app-providers .BackEndTitle {
+    display: flex;
+}
+app-providers .BackEndTitle span.Title {
+    height: 50px;
+}
+.BackEndTitle.FiltersComponent {
+    display: flex;
+}
+.BackEndTitle.FiltersComponent span.Title {
+    margin: 0;
+}
+.TabPopUp {
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 12px 60px #0000001C;
+    border-radius: 10px;
+    opacity: 1;
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    margin: auto;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 40px 50px;
+}
+.TabPopUp .p-tabview.p-component {
+    position: relative;
+    height: 100%;
+}
+.TabPopUp .p-tabview .p-tabview-nav li .p-tabview-nav-link:not(.p-disabled) {
+    padding-left: 0;
+    margin-left: 0;
+    padding-bottom: 10px;
+    color: #00000059;
+}
+.TabPopUp .p-tabview-panels {
+    padding: 25px;
+    border: 0;
+    padding-left: 0;
+    margin-left: 0;
+}
+.TabPopUp span.InnerTitle {
+    text-align: left;
+    font: normal normal 28px/25px RobotoM;
+    letter-spacing: 0px;
+    color: #064862;
+    opacity: 1;
+    margin: 10px 0;
+    display: flex;
+    vertical-align: middle;
+    align-items: center;
+}
+.TabPopUp .p-tabview .p-tabview-nav li {
+    margin-right: 90px;
+}
+.TabPopUp .p-tabview .p-tabview-nav li .p-tabview-nav-link:not(.p-disabled):focus, .TabPopUp .p-tabview .p-tabview-nav li:not(.p-highlight):not(.p-disabled):hover .p-tabview-nav-link {
+    box-shadow: none;
+    background: none;
+    color: #064862;
+}
+.TabPopUp ul.p-tabview-nav {
+    border-bottom: 1px solid #00000017;
+}
+.TabPopUp li.ng-star-inserted.p-highlight span{
+    color: #000;
+}
+.TabPopUp li.ng-star-inserted.p-highlight {
+    border-bottom: 2px solid #ff4a31;
+
+}
+.TabPopUp .p-formgrid.p-grid .p-field label:first-child{
+    font: normal normal normal 13px/15px RobotoR;
+letter-spacing: 0px;
+color: #929292;
+opacity: 1;
+height: 20px;
+margin: 0;
+display: flex;
+align-items: flex-end;
+}
+.TabPopUp .p-formgrid.p-grid .p-field label:last-child{
+    font: normal normal 15px/22px RobotoM;
+    letter-spacing: 0px;
+    color: #000000;
+    opacity: 1;
+    display: flex;
+    align-items: flex-start;
+}
+.TabPopUp .p-formgrid.p-grid {
+    min-height: 50vh;
 }
