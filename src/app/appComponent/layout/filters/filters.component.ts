@@ -70,7 +70,7 @@ this.FilterThree = [
 ];
 this.FilterFour = [
   {name: 'English', author: 'Author1'},
-  {name: 'Italian', author: 'Author2'},
+  {name: 'Spanish', author: 'Author2'},
 ];
     }
   ngOnInit() {
