@@ -1,0 +1,36 @@
+
+<div class="BackEndTitle FiltersComponent">
+    <span class="Title">Health-Care Providers</span>
+    <p-dropdown class="LangOnly" [options]="FilterFour" [(ngModel)]="selectedFilterFour" optionLabel="name"></p-dropdown>
+</div>
+<div class="ReportsContainer">
+    <div class="TableContainer">
+        <div class="PageHeader">
+            <div class="p-grid p-field FiltersComponent BackEnd">
+                <h2 class="Title-1">Filter by :</h2>
+                <tr>
+                    <th>
+                        <p-dropdown [options]="types" styleClass="p-column-filter" placeholder="Provider Type" [showClear]="true">
+                            <ng-template let-option pTemplate="item">
+                                <span [class]="'customer-badge name.discription-' + option.value">{{option.label}}</span>
+                            </ng-template>
+                        </p-dropdown>
+                        
+                        <p-dropdown [options]="types" styleClass="p-column-filter" placeholder="Provider Type" [showClear]="true">
+                            <ng-template let-option pTemplate="item">
+                                <span [class]="'customer-badge name.discription-' + option.value">{{option.label}}</span>
+                            </ng-template>
+                        </p-dropdown>
+                        
+
+                        <p-dropdown [options]="statuses"  styleClass="p-column-filter" placeholder="Integration type" [showClear]="true">
+                            <ng-template let-option pTemplate="item">
+                                <span [class]="'customer-badge status-' + option.value">{{option.label}}</span>
+                            </ng-template>
+                        </p-dropdown>
+                    </th>
+                </tr>
+            </div>
+        </div>
+    </div>
+</div>

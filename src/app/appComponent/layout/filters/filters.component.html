@@ -1,0 +1,8 @@
+    <div class="p-grid p-field FiltersComponent">
+        <h2 class="Title-1">Filter by :</h2>
+        <p-calendar class="Colored" [(ngModel)]="rangeDates" selectionMode="range" [readonlyInput]="true" inputId="range" [showIcon]="true" placeholder="Select Starting Date" inputId="icon" ></p-calendar>
+        <p-dropdown [options]="FilterTwo" [(ngModel)]="selectedFilterTwo" optionLabel="name"></p-dropdown>
+        <p-dropdown [options]="FilterThree" [(ngModel)]="selectedFilterThree" optionLabel="name"></p-dropdown>
+        <input class="Tooltip" type="text" pInputText pTooltip="This is your help !!!" tooltipPosition="left" tooltipEvent="focus">
+        <p-dropdown [options]="FilterFour" [(ngModel)]="selectedFilterFour" optionLabel="name"></p-dropdown>
+    </div>  

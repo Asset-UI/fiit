@@ -1,0 +1,413 @@
+<div class="VisitDetailsContainer">
+    <div class="menu-container">
+        <ul>
+            <li (click)="tabVeiw('general')" [ngClass]="{'active':tab === 'general'}">GENERAL VISIT INFO</li>
+            <li (click)="tabVeiw('medical')" [ngClass]="{'active':tab === 'medical'}">MEDICAL HISTORY</li>
+            <li (click)="tabVeiw('results')" [ngClass]="{'active':tab === 'results'}">RESULTS</li>
+            <li (click)="tabVeiw('reports')" [ngClass]="{'active':tab === 'reports'}">REPORTS</li>
+        </ul>
+    </div>
+    <div class="container" [ngSwitch]="tab" style="margin-top: 80px;">
+        <div class="row mt-4" *ngSwitchCase="'general'">
+            <div class="col-12 col-md-4">
+                <div class="general-card heigh-66">
+                    <div class="heading-14 border-bottom-1 roboto-regular color-light-blue pb-2 mt-2">
+                        Chief complaint/Visit reason
+                        <div class="roboto-bold color-black mt-2">
+                            Asthma
+                        </div>
+                    </div>
+                    <div class="heading-14 border-bottom-1 roboto-regular color-light-blue pb-2 mt-2">
+                        Visit Date
+                        <div class="roboto-bold color-black mt-2">
+                            August 17, 2020
+                        </div>
+                    </div>
+                    <div class="heading-14 border-bottom-1 roboto-regular color-light-blue pb-2 mt-2">
+                        Provider Name
+                        <div class="roboto-bold color-black mt-2">
+                            Abbott Northwestern
+                        </div>
+                    </div>
+                    <div class="heading-14 roboto-regular color-light-blue pb-2 mt-2">
+                        Admitting diagnosis
+                        <div class="roboto-regular heading-12 color-dark-blue mt-2">
+                            chronic disease involving the airways in the lungs. These airways, or bronchial tubes, allow
+                            air to come in and out of the lungs chronic disease involving the airways in the lungs.
+                            These airways, or bronchial tubes, allow air to come in and out of the lungs
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-8 max-height">
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <div class="general-card background-dark-blue ">
+                            <div class="heading-20 color-orange roboto-bold">
+                                Past Surgical History
+                            </div>
+                            <div class="scrollable-inside-card">
+                                <div class="heading-14 border-bottom-1 roboto-regular color-white pb-2 mt-2">
+                                    Back Surgery
+                                    <div class="roboto-bold heading-12 color-light-blue mt-2">
+                                        August 17, 2020
+                                    </div>
+                                </div>
+                                <div class="heading-14 border-bottom-1 roboto-regular color-white pb-2 mt-2">
+                                    Heart Valve
+                                    <div class="roboto-bold heading-12 color-light-blue mt-2">
+                                        August 17, 2020
+                                    </div>
+                                </div>
+                                <div class="heading-14 border-bottom-1 roboto-regular color-white pb-2 mt-2">
+                                    Neck Surgery
+                                    <div class="roboto-bold heading-12 color-light-blue mt-2">
+                                        August 17, 2020
+                                    </div>
+                                </div>
+                                <div class="heading-14 roboto-regular color-white pb-2 mt-2">
+                                    Removal of Gallbladder
+                                    <div class="roboto-regular heading-12 heading-12 color-light-blue mt-2">
+                                        August 17, 2020
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="general-card  ">
+                            <div class="heading-20 color-black roboto-bold">
+                                Allergies
+                            </div>
+                            <div class="scrollable-inside-card">
+                                <div class="heading-14 border-bottom-1 roboto-medium color-orange pb-2 mt-2">
+                                    Back Surgery
+                                    <div class="roboto-bold heading-12 color-dark-blue mt-2">
+                                        Asthma is a condition in which your airways narrow and swell and produce extra
+                                    </div>
+                                </div>
+                                <div class="heading-14 border-bottom-1 roboto-medium color-orange pb-2 mt-2">
+                                    Heart Valve
+                                    <div class="roboto-bold heading-12 color-dark-blue mt-2">
+                                        Asthma is a condition in which your airways extra
+                                    </div>
+                                </div>
+                                <div class="heading-14 border-bottom-1 roboto-medium color-orange pb-2 mt-2">
+                                    Neck Surgery
+                                    <div class="roboto-bold heading-12 color-dark-blue mt-2">
+                                        Asthma is a condition Asthma is a condition in which your airways narrow and
+                                        swell and produce extra
+                                        Asthma is a condition Asthma is a condition in which your airways narrow and
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-12">
+                        <div class="general-card background-orange color-white">
+                            <div class="row">
+                                <div class="col-12 heading-20 roboto-bold ">
+                                    Meds List
+                                </div>
+                                <div class="col-12 heading-18 roboto-medium mt-2">
+                                    Amoxicillin 250 mg
+                                </div>
+                            </div>
+                            <div class="row mt-3 border-bottom-white pb-2">
+                                <div class="col-2">
+                                    <div class="roboto-medium heading-10 color-light-white">
+                                        Prescription date
+                                    </div>
+                                    <div class="roboto-regular heading-13">
+                                        22 May 2019
+                                    </div>
+                                </div>
+                                <div class="col-2">
+                                    <div class="roboto-medium heading-10 color-light-white">
+                                        Start Date
+                                    </div>
+                                    <div class="roboto-regular heading-13">
+                                        22 May 2019
+                                    </div>
+                                </div>
+                                <div class="col-2">
+                                    <div class="roboto-medium heading-10 color-light-white">
+                                        Dosage Unit
+                                    </div>
+                                    <div class="roboto-regular heading-13">
+                                        2
+                                    </div>
+                                </div>
+                                <div class="col-2">
+                                    <div class="roboto-medium heading-10 color-light-white">
+                                        Frequency
+                                    </div>
+                                    <div class="roboto-regular heading-13">
+                                        Tablet
+                                    </div>
+                                </div>
+                                <div class="col-2">
+                                    <div class="roboto-medium heading-10 color-light-white">
+                                        Stop Date
+                                    </div>
+                                    <div class="roboto-regular heading-13">
+                                        22 May 2019
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mt-3 border-bottom-white pb-2">
+                                <div class="col-2">
+                                    <div class="roboto-medium heading-10 color-light-white">
+                                        Prescription date
+                                    </div>
+                                    <div class="roboto-regular heading-13">
+                                        22 May 2019
+                                    </div>
+                                </div>
+                                <div class="col-2">
+                                    <div class="roboto-medium heading-10 color-light-white">
+                                        Start Date
+                                    </div>
+                                    <div class="roboto-regular heading-13">
+                                        22 May 2019
+                                    </div>
+                                </div>
+                                <div class="col-2">
+                                    <div class="roboto-medium heading-10 color-light-white">
+                                        Dosage Unit
+                                    </div>
+                                    <div class="roboto-regular heading-13">
+                                        2
+                                    </div>
+                                </div>
+                                <div class="col-2">
+                                    <div class="roboto-medium heading-10 color-light-white">
+                                        Frequency
+                                    </div>
+                                    <div class="roboto-regular heading-13">
+                                        Tablet
+                                    </div>
+                                </div>
+                                <div class="col-2">
+                                    <div class="roboto-medium heading-10 color-light-white">
+                                        Stop Date
+                                    </div>
+                                    <div class="roboto-regular heading-13">
+                                        22 May 2019
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mt-3 border-bottom-white pb-2">
+                                <div class="col-2">
+                                    <div class="roboto-medium heading-10 color-light-white">
+                                        Prescription date
+                                    </div>
+                                    <div class="roboto-regular heading-13">
+                                        22 May 2019
+                                    </div>
+                                </div>
+                                <div class="col-2">
+                                    <div class="roboto-medium heading-10 color-light-white">
+                                        Start Date
+                                    </div>
+                                    <div class="roboto-regular heading-13">
+                                        22 May 2019
+                                    </div>
+                                </div>
+                                <div class="col-2">
+                                    <div class="roboto-medium heading-10 color-light-white">
+                                        Dosage Unit
+                                    </div>
+                                    <div class="roboto-regular heading-13">
+                                        2
+                                    </div>
+                                </div>
+                                <div class="col-2">
+                                    <div class="roboto-medium heading-10 color-light-white">
+                                        Frequency
+                                    </div>
+                                    <div class="roboto-regular heading-13">
+                                        Tablet
+                                    </div>
+                                </div>
+                                <div class="col-2">
+                                    <div class="roboto-medium heading-10 color-light-white">
+                                        Stop Date
+                                    </div>
+                                    <div class="roboto-regular heading-13">
+                                        22 May 2019
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-4">
+                    <app-reports-orders></app-reports-orders>
+                </div>
+
+            </div>
+        </div>
+        <div class="row mt-4" *ngSwitchCase="'medical'">
+            <div class="col-12 col-md-6">
+                <div class="background-orange colored-box roboto-medium heading-18 color-white">
+                    <div>
+                        <img src="../../../../../assets/images/Smoking.svg" alt="" height="40px"> Smoking?
+                    </div>
+                    <div class="mt-2">
+                        Occasionally
+                    </div>
+                </div>
+                <div class="general-card mt-3">
+                    <div class="heading-20 color-black roboto-bold">
+                        Conditions
+                    </div>
+                    <div class="mt-3 border-bottom-1 pb-2 color-orange roboto-medium heading-14">
+                        Asthma
+                    </div>
+                    <div class="mt-3 border-bottom-1 pb-2 color-orange roboto-medium heading-14">
+                        diabetes
+                    </div>
+                    <div class="mt-3 border-bottom-1 pb-2 color-orange roboto-medium heading-14">
+                        Hypertension
+                    </div>
+                    <div class="mt-3  pb-2 color-orange roboto-medium heading-14">
+                        Psychiatric disorder
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6">
+                <div class="background-dark-blue colored-box roboto-medium heading-18 color-white">
+                    <div>
+                        <img src="../../../../../assets/images/alcohol.svg" alt="" height="40px"> Consume Alcohol?
+                    </div>
+                    <div class="mt-2">
+                        No
+                    </div>
+                </div>
+                <div class="general-card mt-3">
+                    <div class="heading-20 color-black roboto-bold">
+                        Symptoms
+                    </div>
+                    <div class="mt-3 border-bottom-1 pb-2 color-orange roboto-medium heading-14">
+                        Unexplained change in weight
+                    </div>
+                    <div class="mt-3 border-bottom-1 pb-2 color-orange roboto-medium heading-14">
+                        Fatigue/Malaise/Generalized weakness
+                    </div>
+                    <div class="mt-3 pb-2 color-orange roboto-medium heading-14">
+                        Sinus Pain/Pressure/Discharge
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        <div class="row mt-4" *ngSwitchCase="'results'">
+            <div class="col-12">
+                <div class="heading-16 roboto-medium color-dark-blue item-menu active">
+                    <span class="icon-container">
+                        <svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" width="26.542"
+                            height="15" viewBox="0 0 26.542 19.311" fill="white">
+                            <g id="Layer_1" data-name="Layer 1" transform="translate(0 0)">
+                                <path id="Path_2334" data-name="Path 2334"
+                                    d="M17.8,19.305l-.576-.483c-.3-.247-7.331-6.155-9.13-9.935a5.486,5.486,0,0,1-.5-2.123A6.808,6.808,0,0,1,10.78.838c2.028-1.229,4.549-1.107,7.108.342,2.553-1.449,5.08-1.571,7.119-.356a6.816,6.816,0,0,1,3.185,5.924,5.367,5.367,0,0,1-.5,2.139c-1.81,3.785-9,9.688-9.306,9.953ZM13.819,1.814a4.061,4.061,0,0,0-2.123.573A5,5,0,0,0,9.4,6.69a3.493,3.493,0,0,0,.029.377A3.389,3.389,0,0,0,9.729,8.1c1.351,2.84,6.37,7.336,8.074,8.825,1.744-1.481,6.872-5.988,8.228-8.825a3.562,3.562,0,0,0,.326-1.415,5.011,5.011,0,0,0-2.285-4.305c-1.47-.876-3.291-.746-5.279.374l-.905.926-.9-.924a6.521,6.521,0,0,0-3.172-.948Z"
+                                    transform="translate(-5.577 0.005)" fill="#fff" />
+                                <path id="Path_2335" data-name="Path 2335"
+                                    d="M9.738,24.346,8.6,20.6,7.923,22.09H.65a.65.65,0,0,1,0-1.3H7.084l1.752-3.87,1.29,4.247,2.349-3.931L13.8,21.007l2.264-2.92,1.8,2.025h8.024a.65.65,0,0,1,0,1.3H17.273l-1.149-1.287L13.359,23.7l-1.2-3.408Z"
+                                    transform="translate(0 -12.428)" fill="#fff" />
+                            </g>
+                        </svg>
+                    </span>
+                    <span>
+                        Cardiology
+                    </span>
+
+                    <span class="heading-16 color-light-blue float-right">
+                        03
+                    </span>
+
+                </div>
+                <div class="heading-16 roboto-medium color-dark-blue item-menu">
+                    <span class="icon-container">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24.153" height="15" viewBox="0 0 24.153 24.153">
+                            <g id="Group_2691" data-name="Group 2691" transform="translate(0.5 0.5)">
+                                <path id="Path_2337" data-name="Path 2337"
+                                    d="M31,19.421A11.577,11.577,0,1,0,42.574,31,11.59,11.59,0,0,0,31,19.421Zm0,22.4A10.819,10.819,0,1,1,41.817,31,10.832,10.832,0,0,1,31,41.817Z"
+                                    transform="translate(-19.421 -19.421)" fill="#064862" stroke="#064862"
+                                    stroke-width="1" />
+                                <path id="Path_2338" data-name="Path 2338"
+                                    d="M51.739,53.378h-.975a2.643,2.643,0,0,0-.532-1.281l.69-.69a.34.34,0,0,0-.481-.481l-.69.69a2.643,2.643,0,0,0-1.281-.532v-.975a.34.34,0,0,0-.681,0v.975a2.643,2.643,0,0,0-1.281.532l-.69-.69a.34.34,0,1,0-.481.481l.69.69a2.643,2.643,0,0,0-.532,1.281H44.52a.34.34,0,1,0,0,.681h.975a2.643,2.643,0,0,0,.532,1.281l-.691.691a.34.34,0,1,0,.481.481l.691-.691a2.643,2.643,0,0,0,1.281.532v.975a.34.34,0,1,0,.681,0v-.975a2.643,2.643,0,0,0,1.281-.532l.691.691a.34.34,0,0,0,.481-.481l-.69-.69a2.643,2.643,0,0,0,.532-1.281h.975a.34.34,0,0,0,0-.681ZM48.13,55.7a1.978,1.978,0,1,1,1.978-1.978A1.98,1.98,0,0,1,48.13,55.7Z"
+                                    transform="translate(-34.585 -38.27)" fill="#064862" stroke="#064862"
+                                    stroke-width="1" />
+                                <path id="Path_2339" data-name="Path 2339"
+                                    d="M29.1,33.053h.975a2.643,2.643,0,0,0,.532,1.281l-.69.69a.34.34,0,1,0,.481.481l.69-.69a2.642,2.642,0,0,0,1.281.532v.975a.34.34,0,0,0,.681,0v-.975a2.643,2.643,0,0,0,1.281-.532l.69.69a.34.34,0,0,0,.481-.481l-.69-.69a2.643,2.643,0,0,0,.532-1.281h.975a.34.34,0,1,0,0-.681h-.975a2.643,2.643,0,0,0-.532-1.281l.69-.69a.34.34,0,0,0-.481-.481l-.69.69a2.643,2.643,0,0,0-1.281-.532V29.1a.34.34,0,1,0-.681,0v.975a2.643,2.643,0,0,0-1.281.532l-.69-.69a.34.34,0,0,0-.481.481l.69.69a2.643,2.643,0,0,0-.532,1.281H29.1a.34.34,0,0,0,0,.681Zm3.61-2.319a1.978,1.978,0,1,1-1.978,1.978A1.98,1.98,0,0,1,32.712,30.734Z"
+                                    transform="translate(-24.417 -24.417)" fill="#064862" stroke="#064862"
+                                    stroke-width="1" />
+                                <path id="Path_2340" data-name="Path 2340"
+                                    d="M53.36,29.938A1.836,1.836,0,1,0,51.525,28.1,1.838,1.838,0,0,0,53.36,29.938Zm0-2.99A1.155,1.155,0,1,1,52.206,28.1,1.156,1.156,0,0,1,53.36,26.948Z"
+                                    transform="translate(-39.429 -22.771)" fill="#064862" stroke="#064862"
+                                    stroke-width="1" />
+                                <path id="Path_2341" data-name="Path 2341"
+                                    d="M29.285,52.028a1.784,1.784,0,0,0-2.523,2.523l1.859,1.859a1.784,1.784,0,0,0,2.523-2.523Zm1.378,3.9a1.1,1.1,0,0,1-1.56,0L27.243,54.07a1.1,1.1,0,0,1,1.56-1.56l1.859,1.859A1.1,1.1,0,0,1,30.663,55.929Z"
+                                    transform="translate(-22.754 -39.417)" fill="#064862" stroke="#064862"
+                                    stroke-width="1" />
+                                <path id="Path_2342" data-name="Path 2342"
+                                    d="M59.525,37.733a1.786,1.786,0,0,0,0,2.523l1.859,1.859a1.784,1.784,0,0,0,2.523-2.523l-1.859-1.859A1.786,1.786,0,0,0,59.525,37.733Zm3.9,3.9a1.129,1.129,0,0,1-1.56,0l-1.859-1.859a1.1,1.1,0,0,1,1.56-1.56l1.859,1.859A1.1,1.1,0,0,1,63.426,41.634Z"
+                                    transform="translate(-44.361 -29.989)" fill="#064862" stroke="#064862"
+                                    stroke-width="1" />
+                            </g>
+                        </svg>
+                    </span>
+                    <span>
+                        Pathology
+                    </span>
+
+                    <span class="heading-16 color-light-blue float-right">
+                        03
+                    </span>
+
+                </div>
+                <div class="heading-16 roboto-medium color-dark-blue item-menu">
+                    <span class="icon-container">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="26.047" height="15" viewBox="0 0 26.047 27.063">
+                            <g id="Group_2692" data-name="Group 2692" transform="translate(0.15 0.15)">
+                                <path id="Path_2343" data-name="Path 2343"
+                                    d="M25.9,22.673a4.491,4.491,0,0,0-1.418-1.621l-.123-.1c-.531-.437.178.141-.5-.431-.749-.63-1.505-1.265-2.17-1.81a11.467,11.467,0,0,0-.634-13.318c.324-.344.653-.69.941-1,.353-.371.647-.68.8-.845a.494.494,0,0,0-.014-.681L22.508,2.6a1.139,1.139,0,0,0-.148-.1l-.21-.186Q21.056,1.342,19.967.364a.647.647,0,0,0-.523-.2.7.7,0,0,0-.482.312c-.273.379-.975,1.176-1.575,1.847A11.5,11.5,0,0,0,.523,12.493,11.4,11.4,0,0,0,2.584,19.05l-.819.809c-.4.395-.768.756-1.035,1.026a.493.493,0,0,0,0,.7L3.15,24a.49.49,0,0,0,.349.145h0A.5.5,0,0,0,3.849,24l1.88-1.885a11.508,11.508,0,0,0,12.494.052l.529.654c.847,1.037,1.208,1.928,2.188,3.045A3.157,3.157,0,0,0,23.3,26.924a2.874,2.874,0,0,0,1.561-.446A2.981,2.981,0,0,0,25.9,22.673ZM19.556,1.323q.965.869,1.938,1.732l.21.186a.081.081,0,0,0,.015.013c-.13.134-.279.291-.442.462-.27.284-.574.6-.876.926-.086-.092-.164-.188-.252-.278a11.579,11.579,0,0,0-1.9-1.528C18.859,2.153,19.287,1.658,19.556,1.323ZM3.5,22.952,1.779,21.233l.68-.671.726-.719c.223.267.456.528.706.777a11.607,11.607,0,0,0,1.031.9Zm1.091-3.028A10.509,10.509,0,0,1,19.45,5.061,10.509,10.509,0,0,1,4.588,19.923Zm19.738,5.72a2.094,2.094,0,0,1-2.644-.431c-.975-1.11-1.326-1.988-2.166-3.018l-.488-.6a11.683,11.683,0,0,0,1.12-.969,11.658,11.658,0,0,0,.961-1.107c.65.535,1.383,1.148,2.11,1.761.684.576-.021,0,.513.439l.125.1A3.646,3.646,0,0,1,25,23.073,2.006,2.006,0,0,1,24.326,25.643Z"
+                                    transform="translate(-0.523 -0.16)" fill="#bfef4d" stroke="#caf369"
+                                    stroke-miterlimit="10" stroke-width="0.3" />
+                                <path id="Path_2344" data-name="Path 2344"
+                                    d="M17.766,5.778A8.661,8.661,0,0,0,15.4,4.106a.524.524,0,0,0-.111-.052A8.715,8.715,0,0,0,4.306,16.728h0a8.558,8.558,0,0,0,2.772,2.664.518.518,0,0,0,.078.046A8.716,8.716,0,0,0,17.766,5.778Zm-.152,1.308a7.006,7.006,0,0,0-.9,3.76,1.677,1.677,0,0,1-.868,1.509,1.546,1.546,0,0,1-1.683.244,1.167,1.167,0,0,1-.555-.888,3.026,3.026,0,0,1-.052-.684.96.96,0,0,0-.3-.8.976.976,0,0,0-.866-.084A1.323,1.323,0,0,1,10.755,9.3a1.669,1.669,0,0,1,1.032-2.162c.289-.127.583-.243.88-.342a6.608,6.608,0,0,0,2.578-1.674,7.584,7.584,0,0,1,2.369,1.96ZM5.356,16.494a9.079,9.079,0,0,0,.562-.833,4.241,4.241,0,0,0,.646-2.5,1.329,1.329,0,0,1,.675-1.2A.792.792,0,0,1,8.3,12.05c.293.28.577.569.859.86a.711.711,0,0,0,.774.184,1.356,1.356,0,0,1,.51-.075c.243.008.311.078.32.318a1.2,1.2,0,0,1-.072.472.728.728,0,0,0,.176.812c.112.115.229.225.345.335a4.459,4.459,0,0,1,.6.647.932.932,0,0,1-.37,1.319,1.283,1.283,0,0,1-.87.291A4.785,4.785,0,0,0,7.35,18.356l-.034.026a7.714,7.714,0,0,1-1.185-.969A7.586,7.586,0,0,1,5.356,16.494Zm11.712.92a7.742,7.742,0,0,1-8.784,1.509,3.413,3.413,0,0,1,2.2-.728,2.2,2.2,0,0,0,1.536-.475,1.9,1.9,0,0,0,.6-2.692,5.392,5.392,0,0,0-.733-.793c-.075-.071-.151-.143-.227-.217a2.242,2.242,0,0,0,.088-.723,1.241,1.241,0,0,0-1.272-1.265,2.512,2.512,0,0,0-.717.084c-.257-.263-.514-.523-.779-.776a1.779,1.779,0,0,0-2.319-.177,2.273,2.273,0,0,0-1.084,2.072,3.284,3.284,0,0,1-.514,1.929c-.085.145-.18.29-.28.437A7.726,7.726,0,0,1,14.276,4.7a5.4,5.4,0,0,1-1.919,1.166c-.325.108-.649.234-.967.375A2.646,2.646,0,0,0,9.839,9.665a2.292,2.292,0,0,0,2.73,1.447,3.821,3.821,0,0,0,.073.8,2.114,2.114,0,0,0,1.06,1.558,2.258,2.258,0,0,0,1.064.269,2.882,2.882,0,0,0,1.64-.571A2.654,2.654,0,0,0,17.7,10.79a5.816,5.816,0,0,1,.549-2.78A7.746,7.746,0,0,1,17.068,17.414Z"
+                                    transform="translate(-0.103 0.387)" fill="#bfef4d" stroke="#caf369"
+                                    stroke-miterlimit="10" stroke-width="0.3" />
+                                <circle id="Ellipse_223" data-name="Ellipse 223" cx="0.907" cy="0.907" r="0.907"
+                                    transform="translate(21.717 22.534)" fill="#bfef4d" stroke="#caf369"
+                                    stroke-miterlimit="10" stroke-width="0.3" />
+                            </g>
+                        </svg>
+                    </span>
+                    <span>
+                        Radiology
+                    </span>
+
+                    <span class="heading-16 color-light-blue float-right">
+                        03
+                    </span>
+
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="general-card">
+                    <app-notes-table></app-notes-table>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-4" *ngSwitchCase="'reports'">
+            <app-reports-orders></app-reports-orders>
+        </div>
+    </div>
+</div>

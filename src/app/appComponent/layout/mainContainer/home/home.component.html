@@ -1,0 +1,39 @@
+<div class="BackEndTitle FiltersComponent Home">
+    <div class="d-block m-0 p-0">
+        <span class="Title">FIIT Admin</span>
+        <span class="SubTitle">Welcome Back Mohamed!</span>
+    </div>
+    <p-dropdown class="LangOnly" [options]="FilterFour" [(ngModel)]="selectedFilterFour" optionLabel="name"></p-dropdown>
+</div>
+<div class="HomeContainer">
+    <div class="LinkContainer">
+        <p>Health-Care Providers</p>
+        <span>
+            <a [routerLink]="['../providers']">
+                <p>15</p>
+                <p>Hospital</p>
+                <p>latest updates 3 days ago</p>
+            </a>
+            <a [routerLink]="['../providers']">
+                <p>08</p>
+                <p>Clinic</p>
+                <p>latest updates 7 days ago</p>
+            </a>
+            <a [routerLink]="['../steps']">
+                <p>+</p>
+                <p>Add New</p>
+                <p>Health-Care Provider</p>
+            </a>
+        </span>
+    </div>
+    <div class="LinkContainer">
+        <p>Reports</p>
+        <span>
+            <a>
+                <span>view all actions performed on the system !</span>
+                <span>Footprint Report</span>
+                <img src="../../../../../assets/images/footPrint.svg">
+            </a>
+        </span>
+    </div>
+</div>

@@ -183,7 +183,7 @@ p-card p-header h2 {
     -ms-overflow-style: none;
     scrollbar-width: none;
 }
-.Charts::-webkit-scrollbar, .RightMenu::-webkit-scrollbar, .p-datatable-scrollable-body::-webkit-scrollbar, .stepsdemo-content.sc .p-card.p-component::-webkit-scrollbar {
+.Hidden, .Charts::-webkit-scrollbar, .RightMenu::-webkit-scrollbar, .p-datatable-scrollable-body::-webkit-scrollbar, .stepsdemo-content.sc .p-card.p-component::-webkit-scrollbar {
     display: none;
   }
 .DataContainer {
@@ -749,6 +749,24 @@ input#multiple {
    width: -webkit-fill-available;
    cursor: pointer;
 }
+
+.FiltersComponent .p-calendar {
+    width: -webkit-fill-available;
+    cursor: pointer;
+    max-height: 35px;
+    background: #fff 0% 0% no-repeat padding-box;
+    border-radius: 21px;
+    text-align: left;
+    font: 12px/14px RobotoM;
+    letter-spacing: 0px;
+    color: #000;
+    opacity: 1;
+    align-items: center;
+    padding: 15px;
+    border: 0 !important;
+    margin: 0 5px;
+    min-width: 250px;
+}
 .p-calendar .p-datepicker {
     padding: 10px 0 0 0;
     border: 0;
@@ -817,6 +835,9 @@ input#multiple {
     opacity: 1;
     width: 100%;
     overflow: hidden;
+}
+.HomeContainer {
+    margin-top: 130px;
 }
 .ResultsContainer, .HomeContainer {
     background: #f9fafc 0% 0% no-repeat padding-box;
@@ -1737,7 +1758,7 @@ img#NthSelected {
     padding: 30px 35px 15px;
     border-radius: 10px;
     cursor: pointer;
-    background: #FF4A31 0% 0% no-repeat padding-box;
+    background: #ff4a31e3 0% 0% no-repeat padding-box;
     min-height: 25vh;
     text-decoration: none;
 }
@@ -1755,6 +1776,7 @@ img#NthSelected {
 }
 .HomeContainer .LinkContainer:first-child span a p:first-child {
     font: normal normal 39px/47px RobotoM;
+    position: relative;
 }
 .HomeContainer .LinkContainer:first-child span a:nth-child(3) p:first-child {
     font: normal normal 23px/28px RobotoM;
@@ -2506,7 +2528,7 @@ span.InnerTitle {
     vertical-align: middle;
     display: block;
 }
-.TabPopUp span.InnerTitle:nth-child(1):before {
+.TabPopUp span.InnerTitle.BFR::before{
     display: inline-block;
     content: url(./assets/images/avatar/Clinic.svg);
     /* background-image: url(./assets/images/avatar/Clinic.svg); */
@@ -2514,6 +2536,20 @@ span.InnerTitle {
     width: 50px;
     position: relative;
     margin: 0;
+}
+.HomeContainer .LinkContainer a:nth-child(2) p:first-child::after, .HomeContainer .LinkContainer a:nth-child(1) p:first-child::after {
+    display: inline-block;
+    content: "";
+    background-image: url(./assets/images/avatar/Clinic.svg);
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    margin: 0;
+    right: 0;
+    background-repeat: no-repeat;
+}
+.HomeContainer .LinkContainer a:nth-child(1) p:first-child::after {
+    background-image: url(./assets/images/avatar/Hospital.svg);
 }
 app-providers .BackEndTitle {
     display: flex;
@@ -2540,7 +2576,7 @@ app-providers .BackEndTitle span.Title {
     top: 0;
     left: 0;
     right: 0;
-    padding: 40px 50px;
+    padding: 40px 60px;
 }
 .TabPopUp .p-tabview.p-component {
     position: relative;
@@ -2607,4 +2643,56 @@ align-items: flex-end;
 }
 .TabPopUp .p-formgrid.p-grid {
     min-height: 50vh;
+}
+span.x:hover {
+    background-color: #064862;
+}
+span.x {
+    position: absolute;
+    top: 10px;
+    background-color: #00000052;
+    width: 30px;
+    padding-bottom: 2.5px;
+    text-align: center;
+    color: #fff;
+    font-size: 1rem;
+    right: 10px;
+    border-radius: 5px;
+    font-family: 'MontserratSB';
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.BackEndTitle.FiltersComponent.Home span.Title::before {
+    content: none !important;
+}
+
+.BackEndTitle.FiltersComponent.Home span.Title {
+    text-align: left;
+    font: normal normal 100 45px/54px RobotoR;
+    letter-spacing: 0px;
+    color: #000000;
+    opacity: 1;
+    width: auto;
+}
+span.SubTitle span {
+    font-weight: bolder;
+}
+span.SubTitle span {
+    text-align: left;
+    font: normal normal bold 17px/20px RobotoB;
+    letter-spacing: 0px;
+    color: #000000;
+}
+.ReportsContainer {
+    margin-top: 115px;
+}
+.FiltersComponent .p-dropdown .p-dropdown-label, .Colored .p-calendar input , .p-button.p-component.p-button-icon-only {
+    color: #000000b5;
+}
+.FiltersComponent .pi-calendar::before {
+    content: "\e902";
+    font-size: 13px;
+    font-weight: 900;
+    opacity: .5;
 }

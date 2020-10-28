@@ -33,7 +33,6 @@
               "src/assets/icons/fonts/icomoon.svg",
               "src/assets/icons/fonts/icomoon.ttf",
               "src/assets/icons/fonts/icomoon.woff",
-              "./node_modules/bootstrap/dist/css/bootstrap.css",
               "src/styles.css"
             ],
             "scripts": [
