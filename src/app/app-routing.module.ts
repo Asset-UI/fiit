@@ -5,6 +5,7 @@ import { ConditionsComponent } from './appComponent/layout/mainContainer/conditi
 import { ImmunizationComponent } from './appComponent/layout/mainContainer/immunization/immunization.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { LoginComponent } from './appComponent/layout/login/login.component';
 import { VitalsComponent } from './appComponent/layout/mainContainer/vitals/vitals.component';
 import { AllergiesComponent } from './appComponent/layout/mainContainer/allergies/allergies.component';
 import { MedsComponent } from './appComponent/layout/mainContainer/meds/meds.component';
@@ -15,6 +16,7 @@ import { ReportsComponent } from './appComponent/layout/mainContainer/reports/re
 import { MedicalResultsComponent } from './appComponent/layout/mainContainer/medical-results/medical-results.component';
 
 const routes: Routes = [
+  { path: 'login', component: LoginComponent },
   { path: 'vitals', component: VitalsComponent, pathMatch: 'full' },
   { path: 'allergies', component: AllergiesComponent },
   { path: 'meds', component: MedsComponent },

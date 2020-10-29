@@ -59,9 +59,9 @@ import { ViewinfoComponent } from './appComponent/layout/Shared/tableComponents/
 import { HomeComponent } from './appComponent/layout/mainContainer/home/home.component';
 import { ProvidersComponent } from './appComponent/layout/mainContainer/providers/providers.component';
 import { ReportsComponent } from './appComponent/layout/mainContainer/reports/reports.component';
+import { LoginComponent } from './appComponent/layout/login/login.component';
 
 @NgModule({
-
   declarations: [
     AppComponent,
     LinechartComponent,
@@ -98,7 +98,8 @@ import { ReportsComponent } from './appComponent/layout/mainContainer/reports/re
     ViewinfoComponent,
     HomeComponent,
     ProvidersComponent,
-    ReportsComponent
+    ReportsComponent,
+    LoginComponent
   ],
 
   imports: [

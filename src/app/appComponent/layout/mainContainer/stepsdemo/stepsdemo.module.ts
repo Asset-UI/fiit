@@ -5,9 +5,7 @@ import { StepsDemoRoutingModule } from './stepsdemo-routing.module';
 import { StepsModule } from 'primeng/steps';
 import { TabViewModule } from 'primeng/tabview';
 import { IntegrationData } from './IntegrationData';
-import { ConfirmationDemo } from './confirmationdemo';
 import { GeneralInformation } from './generalInformation';
-import { PaymentDemo } from './paymentdemo';
 import { ButtonModule } from 'primeng/button';
 import { CardModule } from 'primeng/card';
 import { DropdownModule } from 'primeng/dropdown';
@@ -39,9 +37,7 @@ import {CalendarModule} from 'primeng/calendar';
 	declarations: [
 		StepsDemo,
 		IntegrationData,
-		ConfirmationDemo,
 		GeneralInformation,
-		PaymentDemo
 	],
 	providers: [
 		TicketService
